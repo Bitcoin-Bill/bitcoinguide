@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 15% 12%;
+    --card: 40 33% 96%;
+    --card-foreground: 220 15% 12%;
+    --popover: 40 33% 96%;
+    --popover-foreground: 220 15% 12%;
+    --primary: 160 25% 27%;
+    --primary-foreground: 40 33% 96%;
+    --secondary: 40 20% 91%;
+    --secondary-foreground: 220 15% 12%;
+    --muted: 40 15% 90%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 160 25% 27%;
+    --accent-foreground: 40 33% 96%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 160 25% 27%;
+    --chart-1: 160 25% 27%;
+    --chart-2: 30 60% 55%;
+    --chart-3: 220 15% 25%;
+    --chart-4: 40 40% 70%;
+    --chart-5: 0 0% 55%;
+    --radius: 0.25rem;
+    --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sidebar-background: 40 33% 96%;
+    --sidebar-foreground: 220 15% 12%;
+    --sidebar-primary: 160 25% 27%;
+    --sidebar-primary-foreground: 40 33% 96%;
+    --sidebar-accent: 40 20% 91%;
+    --sidebar-accent-foreground: 220 15% 12%;
+    --sidebar-border: 40 15% 85%;
+    --sidebar-ring: 160 25% 27%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(40 33% 96%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(0 0% 75%);
+  border-radius: 3px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: hsl(160 25% 27% / 0.15);
+  color: hsl(220 15% 12%);
+}
