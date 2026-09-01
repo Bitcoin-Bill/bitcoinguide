@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "role": {
+      "type": "string",
+      "description": "The role of the user in the app",
+      "enum": [
+        "admin",
+        "user"
+      ]
+    },
+    "debate_name": {
+      "type": "string",
+      "title": "Debate display name",
+      "description": "Display name shown on debates the user posts or responds to",
+      "default": ""
+    }
+  },
+  "required": [
+    "role"
+  ],
+  "name": "User",
+  "type": "object"
+}

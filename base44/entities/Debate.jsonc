@@ -1,0 +1,113 @@
+{
+  "name": "Debate",
+  "type": "object",
+  "properties": {
+    "topic": {
+      "type": "string",
+      "title": "Topic",
+      "description": "The claim being debated"
+    },
+    "proposer_id": {
+      "type": "string",
+      "title": "Proposer ID"
+    },
+    "proposer_name": {
+      "type": "string",
+      "title": "Proposer Name"
+    },
+    "challenger_id": {
+      "type": "string",
+      "title": "Challenger ID"
+    },
+    "challenger_name": {
+      "type": "string",
+      "title": "Challenger Name"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "open",
+        "engaged",
+        "closed"
+      ],
+      "default": "open"
+    },
+    "time_limit": {
+      "type": "number",
+      "title": "Time limit (minutes)",
+      "default": 10
+    },
+    "parent_debate_id": {
+      "type": "string",
+      "title": "Parent Debate ID",
+      "description": "Set when this debate was forked from another",
+      "default": ""
+    },
+    "arguments": {
+      "type": "array",
+      "title": "Arguments",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "author_id": {
+            "type": "string"
+          },
+          "author_name": {
+            "type": "string"
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con",
+              "comment"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "note": {
+            "type": "object"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "default": []
+    },
+    "votes": {
+      "type": "array",
+      "title": "Votes",
+      "description": "Thumbs up (1) / down (-1) cast on the prompt itself",
+      "items": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number",
+            "enum": [
+              1,
+              -1
+            ]
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "topic"
+  ]
+}

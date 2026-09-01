@@ -1,0 +1,44 @@
+{
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 6,18 * * *",
+      "one_time_date": null,
+      "timezone": "America/Cancun",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "bip110_status_refresh",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "refresh": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "refreshBip110Status"
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Refresh BIP-110 status",
+            "description": "Pull current signaling stats from the web and store them"
+          }
+        }
+      }
+    ]
+  },
+  "name": "BIP-110 Status Refresh",
+  "description": "Refreshes the stored BIP-110 signaling status twice daily using web search."
+}

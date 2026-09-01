@@ -1,0 +1,90 @@
+{
+  "name": "Invoice",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "string",
+      "title": "Order ID"
+    },
+    "btcpay_invoice_id": {
+      "type": "string",
+      "title": "BTCPay Invoice ID"
+    },
+    "product_id": {
+      "type": "string",
+      "title": "Product ID"
+    },
+    "product_name": {
+      "type": "string",
+      "title": "Product Name"
+    },
+    "user_id": {
+      "type": "string",
+      "title": "User ID"
+    },
+    "user_email": {
+      "type": "string",
+      "title": "User Email"
+    },
+    "amount": {
+      "type": "number",
+      "title": "Fiat Amount"
+    },
+    "currency": {
+      "type": "string",
+      "title": "Currency",
+      "default": "USD"
+    },
+    "btc_amount": {
+      "type": "number",
+      "title": "BTC Amount (sats)"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "new",
+        "paid",
+        "expired",
+        "failed"
+      ],
+      "default": "new"
+    },
+    "payment_method": {
+      "type": "string",
+      "title": "Payment Method",
+      "enum": [
+        "lightning",
+        "onchain",
+        ""
+      ],
+      "default": ""
+    },
+    "checkout_url": {
+      "type": "string",
+      "title": "Checkout URL"
+    },
+    "lightning_invoice": {
+      "type": "string",
+      "title": "Lightning Invoice"
+    },
+    "bitcoin_address": {
+      "type": "string",
+      "title": "Bitcoin Address"
+    },
+    "transaction_id": {
+      "type": "string",
+      "title": "Transaction ID / Payment Hash"
+    },
+    "settled_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Settled Date"
+    }
+  },
+  "required": [
+    "order_id",
+    "product_id",
+    "amount"
+  ]
+}

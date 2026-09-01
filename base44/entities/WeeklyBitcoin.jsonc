@@ -1,0 +1,72 @@
+{
+  "name": "WeeklyBitcoin",
+  "type": "object",
+  "properties": {
+    "week_of": {
+      "type": "string",
+      "format": "date",
+      "title": "Week Of",
+      "description": "The Sunday that begins this week"
+    },
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "summary": {
+      "type": "string",
+      "title": "Summary",
+      "description": "Optional intro line shown above the items",
+      "default": ""
+    },
+    "items": {
+      "type": "array",
+      "title": "Items",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "title": "Category",
+            "enum": [
+              "x_post",
+              "hot_topic",
+              "news",
+              "other"
+            ],
+            "default": "news"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "url": {
+            "type": "string",
+            "title": "URL"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "description": "Optional handle or outlet, e.g. @saylor or Bitcoin Magazine",
+            "default": ""
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "default": ""
+          },
+          "popup": {
+            "type": "boolean",
+            "title": "Popup",
+            "description": "If true, show as in-site breaking news banner instead of external link",
+            "default": false
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "week_of",
+    "title"
+  ]
+}

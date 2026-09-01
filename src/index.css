@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 15% 12%;
+    --card: 40 33% 96%;
+    --card-foreground: 220 15% 12%;
+    --popover: 40 33% 96%;
+    --popover-foreground: 220 15% 12%;
+    --primary: 160 25% 27%;
+    --primary-foreground: 40 33% 96%;
+    --secondary: 40 20% 91%;
+    --secondary-foreground: 220 15% 12%;
+    --muted: 40 15% 90%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 160 25% 27%;
+    --accent-foreground: 40 33% 96%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 160 25% 27%;
+    --chart-1: 160 25% 27%;
+    --chart-2: 30 60% 55%;
+    --chart-3: 220 15% 25%;
+    --chart-4: 40 40% 70%;
+    --chart-5: 0 0% 55%;
+    --radius: 0.25rem;
+    --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sidebar-background: 40 33% 96%;
+    --sidebar-foreground: 220 15% 12%;
+    --sidebar-primary: 160 25% 27%;
+    --sidebar-primary-foreground: 40 33% 96%;
+    --sidebar-accent: 40 20% 91%;
+    --sidebar-accent-foreground: 220 15% 12%;
+    --sidebar-border: 40 15% 85%;
+    --sidebar-ring: 160 25% 27%;
+    --parchment: 40 33% 96%;
+    --ink: 220 15% 12%;
+    --verdigris: 156 23% 24%;
+    --page-accent: #2D5247;
+    --lead: 0 0% 55%;
+    --copper: 29 57% 46%;
+  }
+
+  .dark {
+    --background: 220 18% 10%;
+    --foreground: 40 30% 90%;
+    --card: 220 18% 12%;
+    --card-foreground: 40 30% 90%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 40 30% 90%;
+    --primary: 156 30% 50%;
+    --primary-foreground: 220 18% 10%;
+    --secondary: 220 15% 16%;
+    --secondary-foreground: 40 30% 90%;
+    --muted: 220 15% 16%;
+    --muted-foreground: 40 10% 65%;
+    --accent: 156 30% 50%;
+    --accent-foreground: 220 18% 10%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 30% 90%;
+    --border: 220 12% 22%;
+    --input: 220 12% 22%;
+    --ring: 156 30% 50%;
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 156 30% 50%;
+    --sidebar-primary-foreground: 220 18% 10%;
+    --sidebar-accent: 220 15% 16%;
+    --sidebar-accent-foreground: 40 30% 90%;
+    --sidebar-border: 220 12% 22%;
+    --sidebar-ring: 156 30% 50%;
+    --parchment: 220 18% 10%;
+    --ink: 40 30% 90%;
+    --verdigris: 156 35% 55%;
+    --page-accent: #5FAE8E;
+    --lead: 40 10% 65%;
+    --copper: 30 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--parchment));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--lead));
+  border-radius: 3px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: hsl(160 25% 27% / 0.15);
+  color: hsl(220 15% 12%);
+}
+
+/* Menu icon pulse */
+@keyframes menu-pulse {
+  0%, 100% { color: hsl(var(--lead)); }
+  50% { color: var(--page-accent); }
+}
+.menu-pulse {
+  animation: menu-pulse 2.6s ease-in-out infinite;
+}
+
+/* EntropyLab jar jiggle */
+@keyframes jar-jiggle {
+  0%, 72%, 100% { transform: rotate(0deg) translateX(0); }
+  74% { transform: rotate(-7deg) translateX(-1px); }
+  76% { transform: rotate(6deg) translateX(1px); }
+  78% { transform: rotate(-5deg) translateX(-1px); }
+  80% { transform: rotate(4deg) translateX(1px); }
+  82% { transform: rotate(-2deg) translateX(0); }
+  84% { transform: rotate(0deg) translateX(0); }
+}
+.jar-jiggle {
+  animation: jar-jiggle 3.5s ease-in-out infinite;
+  transform-origin: 50% 80%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .jar-jiggle { animation: none; }
+}
+
+/* Newspaper mode — This Week in Bitcoin */
+.np-serif { font-family: Georgia, 'Times New Roman', 'STIX Two Text', serif; }
+.np-dropcap::first-letter {
+  float: left;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 3.4rem;
+  line-height: 0.78;
+  font-weight: 700;
+  margin-right: 0.45rem;
+  margin-top: 0.2rem;
+  color: #2a2520;
+}

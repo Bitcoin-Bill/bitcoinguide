@@ -1,0 +1,69 @@
+{
+  "name": "Receipt",
+  "type": "object",
+  "properties": {
+    "invoice_id": {
+      "type": "string",
+      "title": "Invoice ID"
+    },
+    "receipt_number": {
+      "type": "string",
+      "title": "Receipt Number"
+    },
+    "product_id": {
+      "type": "string",
+      "title": "Product ID"
+    },
+    "product_name": {
+      "type": "string",
+      "title": "Product Name"
+    },
+    "user_id": {
+      "type": "string",
+      "title": "User ID"
+    },
+    "user_email": {
+      "type": "string",
+      "title": "User Email"
+    },
+    "btc_amount": {
+      "type": "number",
+      "title": "BTC Amount (sats)"
+    },
+    "fiat_amount": {
+      "type": "number",
+      "title": "Fiat Amount"
+    },
+    "currency": {
+      "type": "string",
+      "title": "Currency",
+      "default": "USD"
+    },
+    "payment_method": {
+      "type": "string",
+      "title": "Payment Method",
+      "enum": [
+        "lightning",
+        "onchain"
+      ]
+    },
+    "transaction_id": {
+      "type": "string",
+      "title": "Transaction ID / Payment Hash"
+    },
+    "store_name": {
+      "type": "string",
+      "title": "Store Name"
+    },
+    "btcpay_invoice_id": {
+      "type": "string",
+      "title": "BTCPay Invoice ID"
+    }
+  },
+  "required": [
+    "invoice_id",
+    "receipt_number",
+    "product_name",
+    "payment_method"
+  ]
+}

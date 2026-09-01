@@ -1,0 +1,42 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "slug": {
+      "type": "string",
+      "title": "Slug"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "price": {
+      "type": "number",
+      "title": "Price (fiat)",
+      "default": 5
+    },
+    "currency": {
+      "type": "string",
+      "title": "Currency",
+      "default": "USD"
+    },
+    "protected": {
+      "type": "boolean",
+      "title": "Protected",
+      "default": true
+    },
+    "store_id": {
+      "type": "string",
+      "title": "BTCPay Store ID"
+    }
+  },
+  "required": [
+    "title",
+    "slug",
+    "price"
+  ]
+}

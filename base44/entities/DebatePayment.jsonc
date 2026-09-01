@@ -1,0 +1,129 @@
+{
+  "name": "DebatePayment",
+  "type": "object",
+  "properties": {
+    "btcpay_invoice_id": {
+      "type": "string",
+      "title": "BTCPay Invoice ID"
+    },
+    "order_id": {
+      "type": "string",
+      "title": "Order ID"
+    },
+    "action_type": {
+      "type": "string",
+      "title": "Action Type",
+      "enum": [
+        "membership",
+        "post",
+        "engage",
+        "fork",
+        "comment"
+      ]
+    },
+    "user_id": {
+      "type": "string",
+      "title": "User ID"
+    },
+    "user_email": {
+      "type": "string",
+      "title": "User Email"
+    },
+    "user_name": {
+      "type": "string",
+      "title": "User Name",
+      "default": ""
+    },
+    "debate_id": {
+      "type": "string",
+      "title": "Debate ID",
+      "description": "Target debate for engage/fork/comment; empty for post/membership",
+      "default": ""
+    },
+    "topic": {
+      "type": "string",
+      "title": "Topic",
+      "description": "Claim text for post/fork actions",
+      "default": ""
+    },
+    "comment_text": {
+      "type": "string",
+      "title": "Comment Text",
+      "default": ""
+    },
+    "amount_sats": {
+      "type": "number",
+      "title": "Amount (sats)",
+      "default": 2100
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "new",
+        "paid",
+        "expired",
+        "failed"
+      ],
+      "default": "new"
+    },
+    "payment_method": {
+      "type": "string",
+      "title": "Payment Method",
+      "enum": [
+        "lightning",
+        "onchain",
+        ""
+      ],
+      "default": ""
+    },
+    "checkout_url": {
+      "type": "string",
+      "title": "Checkout URL",
+      "default": ""
+    },
+    "lightning_invoice": {
+      "type": "string",
+      "title": "Lightning Invoice",
+      "default": ""
+    },
+    "bitcoin_address": {
+      "type": "string",
+      "title": "Bitcoin Address",
+      "default": ""
+    },
+    "transaction_id": {
+      "type": "string",
+      "title": "Transaction ID",
+      "default": ""
+    },
+    "receipt_id": {
+      "type": "string",
+      "title": "Receipt ID",
+      "description": "Short code the user can re-enter to restore membership after clearing browser data",
+      "default": ""
+    },
+    "result_debate_id": {
+      "type": "string",
+      "title": "Result Debate ID",
+      "description": "Idempotency: the debate created by a post/fork action",
+      "default": ""
+    },
+    "result_argument_id": {
+      "type": "string",
+      "title": "Result Argument ID",
+      "description": "Idempotency: marker for an engage/comment action",
+      "default": ""
+    },
+    "settled_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Settled Date"
+    }
+  },
+  "required": [
+    "action_type",
+    "user_id",
+    "amount_sats"
+  ]
+}

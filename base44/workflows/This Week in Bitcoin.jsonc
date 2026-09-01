@@ -1,0 +1,44 @@
+{
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 9 * * 0,3",
+      "one_time_date": null,
+      "timezone": "America/Vancouver",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "description": "Every Sunday and Wednesday at 9am: fetches the week's top Bitcoin news and populates/refreshes the 'This Week in Bitcoin' post automatically.",
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "this_week_in_bitcoin",
+      "version": "1.1",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "create_post": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "createWeeklyPost"
+          },
+          "then": "end",
+          "x-base44": {
+            "title": "Create & populate weekly post",
+            "description": "Fetches this week's Bitcoin news and writes the post"
+          }
+        }
+      }
+    ]
+  },
+  "name": "This Week in Bitcoin"
+}

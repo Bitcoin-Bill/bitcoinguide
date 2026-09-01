@@ -1,0 +1,46 @@
+{
+  "name": "Bip110Status",
+  "type": "object",
+  "properties": {
+    "signalRate": {
+      "type": "number",
+      "title": "Signal Rate (%)",
+      "description": "Share of blocks signaling BIP-110 in the current 2016-block period"
+    },
+    "signalingBlocks": {
+      "type": "number",
+      "title": "Signaling Blocks (this period)"
+    },
+    "periodBlocks": {
+      "type": "number",
+      "title": "Period Blocks (mined so far)"
+    },
+    "blocksLeft": {
+      "type": "number",
+      "title": "Blocks Left in Period"
+    },
+    "daysLeft": {
+      "type": "number",
+      "title": "Days Left in Period"
+    },
+    "periodProgress": {
+      "type": "number",
+      "title": "Period Progress (%)"
+    },
+    "signalsNeeded": {
+      "type": "number",
+      "title": "Signals Needed for Lock-in"
+    },
+    "summary": {
+      "type": "string",
+      "title": "Summary",
+      "default": ""
+    },
+    "sourceUrl": {
+      "type": "string",
+      "title": "Source URL",
+      "default": "https://bip110.org/"
+    }
+  },
+  "required": []
+}
