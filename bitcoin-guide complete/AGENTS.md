@@ -32,3 +32,10 @@ npx skills add base44/skills
 - Prefer the existing Base44 CLI workflow over adding new npm scripts for Base44-specific tasks.
 - Reuse the existing SDK client and Vite plugin patterns before adding new Base44 integration paths.
 - Run the relevant checks from `package.json` before finishing code changes.
+
+## Base44 Sandbox Notes
+
+- App lives in the `bitcoin-guide complete/` subdirectory (repo root holds only that folder + zip).
+- Run in the sandbox with `docker compose -f docker-compose.base44.yml up -d` (node:22, bind mount, vite dev on host port 3000).
+- `vite.config.js` sets `server.host: true` and `allowedHosts: true` for the proxied preview hostname.
+- Frontend-only: no local backend/DB. Base44 backend calls are unproxied unless `VITE_BASE44_APP_BASE_URL` is set.
