@@ -1,0 +1,3448 @@
+{
+  "createdAt": "2026-11-03T20:11:31.387Z",
+  "scope": "Images referenced in current source, brand logo, custom static SVG icons, and imported Lucide icons. No video or PDF downloads; no private files or database content.",
+  "assets": [
+    {
+      "path": "icons/custom/OogaPalmTreeIcon.svg",
+      "bytes": 2820,
+      "sha256": "9476592d3537c58a4daaa7b0cc55470d5de0d3e066593bafcf2f0e4c6490407e",
+      "kind": "icon",
+      "source": "src/components/OogaPalmTreeIcon.jsx",
+      "note": "Static SVG export; website animation is not embedded."
+    },
+    {
+      "path": "icons/custom/OogaCavemanIcon.svg",
+      "bytes": 3186,
+      "sha256": "09daadc31430f70b3900d7d3b37b9d9885becb5fe4d0bc7b18b1ebda351a4013",
+      "kind": "icon",
+      "source": "src/components/OogaCavemanIcon.jsx",
+      "note": "Static SVG export; website animation is not embedded."
+    },
+    {
+      "path": "icons/custom/OogaCaveman.svg",
+      "bytes": 2019,
+      "sha256": "e84b57dbfda24131af93fe90f021c73251a6d2aff79d45c2d9b15a299b9e59d9",
+      "kind": "icon",
+      "source": "src/components/OogaCaveman.jsx",
+      "note": "Static SVG export; website animation is not embedded."
+    },
+    {
+      "path": "icons/custom/GoogleIcon.svg",
+      "bytes": 731,
+      "sha256": "be3ea03e38773b592da4ce0660a8b01a1a5b43634ff95b2b9846a97d7bb16186",
+      "kind": "icon",
+      "source": "src/components/GoogleIcon.jsx",
+      "note": "Static SVG export; website animation is not embedded."
+    },
+    {
+      "path": "icons/lucide/LICENSE.txt",
+      "bytes": 880,
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
+      "kind": "license",
+      "source": "lucide-react"
+    },
+    {
+      "path": "images/e65756f955-79ac2fd82_Lowtimepreferene.png",
+      "bytes": 202697,
+      "sha256": "947439a83eb4b92c00c21c709f29511e29564ae7a5ae5fff5beb7e7581ba9d32",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/79ac2fd82_Lowtimepreferene.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/6cd520c03e-f66b036e3_Gametheory.png",
+      "bytes": 357632,
+      "sha256": "238a2658e0c380d3c0688fb8f02138f151142ed4df01c1979ed7e19cf3c2cb38",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f66b036e3_Gametheory.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/936e580af6-a9b5387db_Innovations.png",
+      "bytes": 235007,
+      "sha256": "c350c1a8a08f707e41f60ae5ff4c3eb72e4531ece41ee656625ae34accb44fcb",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a9b5387db_Innovations.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/e80822ffad-16766f4bd_Greshamslaw.png",
+      "bytes": 156617,
+      "sha256": "afd04f9375dcbcc6b9984f18d2df7b0ae214675fde9771ae500d2de9e0866ac0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/16766f4bd_Greshamslaw.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/d91cad7b26-efe742dd7_Moneys.png",
+      "bytes": 331910,
+      "sha256": "7f735959cb75ff321a24384509b2162beb5a06222dfc6b1f9e7a9ed74aad0d6d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/efe742dd7_Moneys.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/ae44c30901-89b0043aa_value.png",
+      "bytes": 179127,
+      "sha256": "d7a8303f8546ec4163aaf9eaa5fd7c9e801b2db0780fb80e4542e7e90ab4fcb5",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/89b0043aa_value.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/95e6da40fc-90ad8dd2b_cognitivedissonance.png",
+      "bytes": 204981,
+      "sha256": "1201a754fc8ca526ee3d307a3103e78ddeb7954dbe06f6b8f5a6437bb93bfbbd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/90ad8dd2b_cognitivedissonance.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/d4b9d8c989-dda3bc4e7_conclusion.png",
+      "bytes": 460087,
+      "sha256": "485fa0f7d7beaa09377ad8386b8b21f6ff971744cc3c9d50a32801aa4094c4e2",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/dda3bc4e7_conclusion.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/f8943ddee3-da2e0827a_intuition.png",
+      "bytes": 218714,
+      "sha256": "ebf74c13a71dc8c0d6c7bc886ca32b554aadd9ea4c8710559ce57f0b31f17c21",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/da2e0827a_intuition.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/f1bb8be8a9-1f985c846_IMG_8705.jpeg",
+      "bytes": 72121,
+      "sha256": "1ddac404fd46e063cadd4b8d3b5d716c6b6cb53c70d21ad1405cd677d8bd3869",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1f985c846_IMG_8705.jpeg",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/addec3f03e-4f0197467_IMG_8764.webp",
+      "bytes": 17938,
+      "sha256": "da642ecd2c6f70aaf7fa932c3762b735dde2387843043b7be8da67e272389355",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/4f0197467_IMG_8764.webp",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/webp"
+    },
+    {
+      "path": "images/2887540393-1a7c67650_IMG_8558.jpeg",
+      "bytes": 98183,
+      "sha256": "7df9f5c6f6f83f13238d1454a385218e3c58d0068cbfe05d64fa8125d524e754",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1a7c67650_IMG_8558.jpeg",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/f2eb6335ea-36dbbfe62_monetaryabuse.png",
+      "bytes": 190905,
+      "sha256": "f15246be4849857ddeae06997f617d2f8b7502c6bad80be2fb69cb19446325c0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/36dbbfe62_monetaryabuse.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/4c395e196a-1c090c010_Liminalstate.png",
+      "bytes": 198212,
+      "sha256": "75dd06f06cb34108cc9ebd55bb84935ad78394b932464551048c3b731591a3a3",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1c090c010_Liminalstate.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/4f7c3fd9d2-388f6fff6_Screenshot2026-07-09at105227AM.png",
+      "bytes": 845958,
+      "sha256": "70a2883045637e206b670f176ce2edf1a32c8b6184de1a27cff2f86f4066e3f7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/388f6fff6_Screenshot2026-07-09at105227AM.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/8ce755e833-0dee233b5_IMG_8769.jpg",
+      "bytes": 58154,
+      "sha256": "bfbff27afe303be0186f5b18f69af995e725b776ae2bf4b61c878bf1f3a58603",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/0dee233b5_IMG_8769.jpg",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/6e4b190541-b1e0599c1_humannature.png",
+      "bytes": 205835,
+      "sha256": "75a1b33c4dfa1e60424050a321f725616c42ef428c10cf2fea9af5329fdef473",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/b1e0599c1_humannature.png",
+      "sources": [
+        "src/components/ArchiveSection.jsx",
+        "src/components/video/SlideshowGallery.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/72682409a1-ccb146dd7_IMG_9252.jpeg",
+      "bytes": 124943,
+      "sha256": "b1d81c8f8f86821d809a9d14c5dba2f2a5290e2efffc9015aed6bd261610eb20",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ccb146dd7_IMG_9252.jpeg",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/544e6f9d7e-0b5899880_generated_bd8be20e.png",
+      "bytes": 115269,
+      "sha256": "a527982c443f212cc54d9d243f9852541fef8a77bac9ecfc80a26f1b1744159c",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/0b5899880_generated_bd8be20e.png",
+      "sources": [
+        "src/components/AboutSection.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/73f5decb2a-415f28fe5_generated_8b61b054.png",
+      "bytes": 200661,
+      "sha256": "921752f06344794a52538962d656eba31fe3a62498a8be9f09fd46f3bd1a6ac5",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/415f28fe5_generated_8b61b054.png",
+      "sources": [
+        "src/components/AboutSection.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/80214fddfa-17edb581b_IMG_8768.jpg",
+      "bytes": 261622,
+      "sha256": "efd7f728989982f509e697712999abe114f9c659f39c61dd8fbe680493b2f037",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/17edb581b_IMG_8768.jpg",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/4009609261-8c1a70660_IMG_8767.jpeg",
+      "bytes": 53990,
+      "sha256": "dc258a26c0ec1d5bfd38b599aaf9a748e42dba8922d3cb9d445b27f86374bdb0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8c1a70660_IMG_8767.jpeg",
+      "sources": [
+        "src/components/ArchiveSection.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/b41b92cde0-09f1d867a_Untitleddesign3.png",
+      "bytes": 1538676,
+      "sha256": "9b7f1b197f0783722fa48cee168560808d166d00d94825b7afcd44d17ea7ea34",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/09f1d867a_Untitleddesign3.png",
+      "sources": [
+        "src/components/OrangeCubeLogo.jsx",
+        "src/pages/SocialCard.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/36398bb15f-534990976_IMG_0539.jpeg",
+      "bytes": 217907,
+      "sha256": "956b43fc8d3f8263693589c70bc5ea8ac56e0d8ba36ffb5049846d1d285ce9f8",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/534990976_IMG_0539.jpeg",
+      "sources": [
+        "src/components/BeerTip.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/5a5949f5e0-1011423e1_IMG_8773.jpeg",
+      "bytes": 8725,
+      "sha256": "346ad8a8fecaa67a6181c4db6613224581fd8ff67e1385b2240d80875b69a253",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1011423e1_IMG_8773.jpeg",
+      "sources": [
+        "src/components/ShakepayTip.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/ece129962b-9fb9bd1aa_Screenshot2026-07-09at14901PM.png",
+      "bytes": 94008,
+      "sha256": "8507c3821b0051c4c2737e59e6f2d345eeeed6f22ec87d5947810d53e9614948",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9fb9bd1aa_Screenshot2026-07-09at14901PM.png",
+      "sources": [
+        "src/components/StrikeTip.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/b5f4a38cfb-c0f1036c3_IMG_0531.jpeg",
+      "bytes": 120165,
+      "sha256": "38758606f6cc781ab02a190a7086a7c8215ffbe9d64d770215cc7064ba3a41f3",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/c0f1036c3_IMG_0531.jpeg",
+      "sources": [
+        "src/components/BeerTip.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/bb32f1509d-fd02a5bbe_IMG_0532.jpeg",
+      "bytes": 158297,
+      "sha256": "89146862ae81b5dd6b97dceb5872e6f11b1f9ebbbb415351a2e15558baf4e0ab",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fd02a5bbe_IMG_0532.jpeg",
+      "sources": [
+        "src/components/BeerTip.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/95ca1eff24-3b4162998_IMG_0226.png",
+      "bytes": 7623,
+      "sha256": "f4f95bff46d9aff15a16b27baef2148405418e2b2b2c1389b99df07ff39d911f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3b4162998_IMG_0226.png",
+      "sources": [
+        "src/components/EntropyLabLink.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/aef7161bda-8f242b043_820A3C90-DCA2-4290-A63A-3CE51B68512C_Original.png",
+      "bytes": 3167996,
+      "sha256": "9a7f84c718fb2824e066e52ab7e9fa37819442bc87b7f1fb090c64f90613689b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8f242b043_820A3C90-DCA2-4290-A63A-3CE51B68512C_Original.png",
+      "sources": [
+        "src/components/resources/ReadingListLink.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/0d960087a9-12d367_4f26ccd17f8f4e3a8958306ea08c2332_mv2.png",
+      "bytes": 14650,
+      "sha256": "4a03b7f94ebab44deddae6df1be5c84cccb983a9f7472e30f3c97bfda4b4c0a0",
+      "kind": "image",
+      "url": "https://static.wixstatic.com/media/12d367_4f26ccd17f8f4e3a8958306ea08c2332~mv2.png",
+      "sources": [
+        "src/components/ui/image.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/feddf823c5-e5c68f8da_IMG_0225.png",
+      "bytes": 6493,
+      "sha256": "b1c166841adcfaa1dd80bbd3cc373df241acaa723fda5a8785d926e802ef0908",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/e5c68f8da_IMG_0225.png",
+      "sources": [
+        "src/components/EntropyLabLink.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/5785795d75-ccb90b7fc_820A3C90-DCA2-4290-A63A-3CE51B68512C_Original.png",
+      "bytes": 3167996,
+      "sha256": "9a7f84c718fb2824e066e52ab7e9fa37819442bc87b7f1fb090c64f90613689b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ccb90b7fc_820A3C90-DCA2-4290-A63A-3CE51B68512C_Original.png",
+      "sources": [
+        "src/components/BeerTip.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/62922568bb-938a7a0a2_generated_135e2688.png",
+      "bytes": 212896,
+      "sha256": "a30f28e46afc7d986f9ebad90d9cb6dcc7bee19f40a0cb89af39d05cb371f827",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/938a7a0a2_generated_135e2688.png",
+      "sources": [
+        "src/components/PathsSection.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/958d2284e4-db341732d_IMG_8775.jpeg",
+      "bytes": 101356,
+      "sha256": "aee2d5ac8bfb8e879993e661d5f368197c0463c3247154d10d4bfadffe819b0e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/db341732d_IMG_8775.jpeg",
+      "sources": [
+        "src/components/ShakepayTip.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/6f3702c74f-bcfa8e554_2.jpeg",
+      "bytes": 79419,
+      "sha256": "859d485b453d45677b2f10a4342ab990ab50203f58de9a4767a0ff0e0c7b0b1b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/bcfa8e554_2.jpeg",
+      "sources": [
+        "src/components/video/CognitiveDissonanceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/31b57ac43d-a8186d2f4_3.jpeg",
+      "bytes": 64088,
+      "sha256": "932e20f408d7f687636c5de385dad9ef8d9d559905ead8887f4d1c5cd50f3986",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a8186d2f4_3.jpeg",
+      "sources": [
+        "src/components/video/CognitiveDissonanceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d62c87a591-3c02d8c6f_1.jpeg",
+      "bytes": 49425,
+      "sha256": "9a529e65e308887c9b67d0b5fa1de4b96cfb531b2faaa29623fd3a2f94aff060",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3c02d8c6f_1.jpeg",
+      "sources": [
+        "src/components/video/CognitiveDissonanceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/166561adbb-62c6fe741_4.jpeg",
+      "bytes": 73094,
+      "sha256": "544e550ab25cfabe76db489588539159e9992e74901b943de00cd163f20bd220",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/62c6fe741_4.jpeg",
+      "sources": [
+        "src/components/video/CognitiveDissonanceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/e8aa9643a6-1cceec6ec_5.jpeg",
+      "bytes": 62112,
+      "sha256": "b7ca87e1ea66dc2137f9b1df309b16a905360b4d6d2349f86431de12b775e837",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1cceec6ec_5.jpeg",
+      "sources": [
+        "src/components/video/CognitiveDissonanceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/0338b51c74-3a8cddde5_1.jpeg",
+      "bytes": 107394,
+      "sha256": "15efbfe38f7b001fb04f41325031880eef3183c0e007578d4c0d79876ae2e3c7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3a8cddde5_1.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/df81144538-0389cf0ad_6.jpeg",
+      "bytes": 60984,
+      "sha256": "552b3c5042713e45fe65022324fbbd0b9bfe2db846edae764c88c21aa5e04747",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/0389cf0ad_6.jpeg",
+      "sources": [
+        "src/components/video/CognitiveDissonanceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/cb3159f502-281787471_2.jpeg",
+      "bytes": 124233,
+      "sha256": "42df3612f8a1f7aaf015142e24e6464be3529c0661378cd92b79bfeab40891ff",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/281787471_2.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/c777ad9746-990e494be_4.jpeg",
+      "bytes": 115774,
+      "sha256": "70d82be127fd094b5d4264d04bebf01d7733a4a7c8c827c8da1c9b54d98fd788",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/990e494be_4.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/12c856fc96-d08536741_6.jpeg",
+      "bytes": 109996,
+      "sha256": "6076a1f2ab924b940ae74f7a5bf4d0726caca5eef1a405c526b5f8f2169d478b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/d08536741_6.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d64791afbc-cece13ffb_5.jpeg",
+      "bytes": 116834,
+      "sha256": "04e90044e42ff4f94955acedf7eb04caf6bb013ebc583e1f27b00d21d7d446b0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/cece13ffb_5.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/3febb97976-e00b0ef45_3.jpeg",
+      "bytes": 131512,
+      "sha256": "4ef1feceac03f3af485afa9dca41076f1b79952a5fac654bbe646ec40243e62a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/e00b0ef45_3.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/007b594ef3-644f2fc67_7.jpeg",
+      "bytes": 116494,
+      "sha256": "28c8fa371ba2dab6d903fedf63e6bf84f95f46614a407608240f94b0fae7546b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/644f2fc67_7.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/42e0dd7894-6a10b7fe4_1.jpeg",
+      "bytes": 100607,
+      "sha256": "0bd7ff7cff5a88e07666cd4042f272840f93e5c555d7ad15132f6a8e6c1e51b0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/6a10b7fe4_1.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/c4696f87c1-996af8399_8.jpeg",
+      "bytes": 104486,
+      "sha256": "f1e3e4e9aae899ff2a2056d25c9679d3f76dfa3922fcacb9196a693833685d53",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/996af8399_8.jpeg",
+      "sources": [
+        "src/components/video/ConclusionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/949f105fb3-13602d069_3.jpeg",
+      "bytes": 111196,
+      "sha256": "28178445c1eb8d14b8312cb6a72ee16c3020e3b2db5cda543ab548af24b851b9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/13602d069_3.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/1e7b31b3f3-582050d8c_5.jpeg",
+      "bytes": 137387,
+      "sha256": "a822fee3e2813f668c5c8ee68854cb98cedfca88f965263531b46d18e2d125e6",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/582050d8c_5.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/c997400bee-411c2476f_4.jpeg",
+      "bytes": 119944,
+      "sha256": "d8a983335c6798857cd57140c44c662cc530c85b316eb3da7de9fc2f157f31be",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/411c2476f_4.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/8371c51b6b-2486330e6_2.jpeg",
+      "bytes": 138813,
+      "sha256": "b63fe7b64ef23d8c07c63f54d8ccb5d222d6997723a9ff0f5cc8b9e803e0d689",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2486330e6_2.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/0176e11cfa-d6c7d9f9c_6.jpeg",
+      "bytes": 142331,
+      "sha256": "83eba62d08db9c13585f6c92adeea860dc982f97ddccf9b8c7172070d27b60a1",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/d6c7d9f9c_6.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d7af2c56ed-08731a83e_2.jpeg",
+      "bytes": 68205,
+      "sha256": "2525193fa017e3b2f57046da9c4f9fb0671ddef022df3467a091996ac4cd695e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/08731a83e_2.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/be71be6ea8-379fe5649_7.jpeg",
+      "bytes": 112670,
+      "sha256": "b909355c4a34f6d1ffee3214ce56d566643db21c89443a714e86719cfb44a17d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/379fe5649_7.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/96adb58d3f-7c92e9d72_4.jpeg",
+      "bytes": 72080,
+      "sha256": "c5886a47be95ce0f37d9967cb66c34e91f66f448b53a4ac05ae243ad1b3045d9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7c92e9d72_4.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/4ec2ea3c70-56fa06389_8.jpeg",
+      "bytes": 101073,
+      "sha256": "2ea535c7335c339b9828bb0a0fc0ea3f5c01176088eb5498b8de82a8540c01e8",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/56fa06389_8.jpeg",
+      "sources": [
+        "src/components/video/GameTheorySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/f2cf4ad81a-e5232fd7f_7.jpeg",
+      "bytes": 72267,
+      "sha256": "16c36c79430f1db576062ddfeea7c0ed17c0d4b86927019bb7501541be2582c9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/e5232fd7f_7.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d11f097f36-e9695a39a_6.jpeg",
+      "bytes": 72424,
+      "sha256": "a47f619e798be360c564e3734d3bec0ca840568079db6e9824fefee91d946307",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/e9695a39a_6.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/1d075f161c-0f0549823_3.jpeg",
+      "bytes": 82183,
+      "sha256": "05de1bdd969002a09b6fbe78bd69f58e9891780c485b4f40acbf56ccc9c87f9d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/0f0549823_3.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/eaeb0f55cc-c530d254c_1.jpeg",
+      "bytes": 55899,
+      "sha256": "c4696bd1693e2b5cc5299ab718cd1fe6191439dd312a63365e0757defee88b23",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/c530d254c_1.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/0bbbd09dcf-9cf3f86d0_8.jpeg",
+      "bytes": 73998,
+      "sha256": "b8481c236081a5d38a192c89050c040bf228466949abb650e6b66abb49bc1e1d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9cf3f86d0_8.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/6413795ecd-5eeb3df74_5.jpeg",
+      "bytes": 79683,
+      "sha256": "a14a96267508fa07a6ba242a1557617a80fc21b50588bf17313069fede560777",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/5eeb3df74_5.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/a85b88731f-05984958e_1.jpeg",
+      "bytes": 56768,
+      "sha256": "a279598d6a9de65c8ce7b2cc80b545f30498a4954ca89223f5dfd3937e1bcd63",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/05984958e_1.jpeg",
+      "sources": [
+        "src/components/video/HumanNatureSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/ae21497238-a22d06de7_9.jpeg",
+      "bytes": 77880,
+      "sha256": "ec0a18a70d24a12456e2b5097b386b52d8a48dcf07fbaedaca1b676eea602da3",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a22d06de7_9.jpeg",
+      "sources": [
+        "src/components/video/GreshamsLawSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/ea6d331ac5-15715e6fa_3.jpeg",
+      "bytes": 73901,
+      "sha256": "1dd13001a9039d250e783813bd78cf7668fcd000d30ac318d02536276bfd54a5",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/15715e6fa_3.jpeg",
+      "sources": [
+        "src/components/video/HumanNatureSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/7adcf9e40e-79e3c090b_2.jpeg",
+      "bytes": 71358,
+      "sha256": "4d3f79f034c687be135b96544885a429105e0846ea79e5a0612c663b18b5eace",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/79e3c090b_2.jpeg",
+      "sources": [
+        "src/components/video/HumanNatureSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/2053844516-8635ab4bc_5.jpeg",
+      "bytes": 81346,
+      "sha256": "a1b3a70b49e2872fb4f41e208d581b007612dd5beb688571c3c06260995f1a17",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8635ab4bc_5.jpeg",
+      "sources": [
+        "src/components/video/HumanNatureSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/9ef00639c2-f4efb7539_4.jpeg",
+      "bytes": 66604,
+      "sha256": "5895f01ca303646f70822eb694105afd46e2df9c2e7027ad69f394333035fe8d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f4efb7539_4.jpeg",
+      "sources": [
+        "src/components/video/HumanNatureSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/2b4ee9dc9b-8b8637d38_6.jpeg",
+      "bytes": 62965,
+      "sha256": "b680d0bb13eae00896329cdce781157b20f4b86f57f75e2c0b7ad99393d0ba6e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8b8637d38_6.jpeg",
+      "sources": [
+        "src/components/video/HumanNatureSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/3e1833fe0b-a3bc28962_1.jpeg",
+      "bytes": 67560,
+      "sha256": "9f99bc42f55b35afd26675b1b985c6c60065bca3fd27d52f6dab78e1fb891b1a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a3bc28962_1.jpeg",
+      "sources": [
+        "src/components/video/InnovationsSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/47c175539b-6a4a9edc9_3.jpeg",
+      "bytes": 75729,
+      "sha256": "68de1ef1552d5d5835de78c520dbf4fae0de1e8868b2a8bf5ccd960f4751d685",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/6a4a9edc9_3.jpeg",
+      "sources": [
+        "src/components/video/InnovationsSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/e3c87e2f64-2d9fdb60d_5.jpeg",
+      "bytes": 64812,
+      "sha256": "c4ba7d97cdd314e684c3f972a5d3d4173ad915f5e7288cd487f14633677194da",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2d9fdb60d_5.jpeg",
+      "sources": [
+        "src/components/video/InnovationsSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/4656292156-f21b334cd_4.jpeg",
+      "bytes": 67555,
+      "sha256": "751e23092763cbdfa7f36339407877984eebaadf46ea42bc8412171041bea700",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f21b334cd_4.jpeg",
+      "sources": [
+        "src/components/video/InnovationsSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/e7c317ea16-c8eeb5b8e_7.jpeg",
+      "bytes": 67136,
+      "sha256": "9613bbfb4847ee48a0f181fae3c2db24aa9a6b298529d202db3b4856210ed94e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/c8eeb5b8e_7.jpeg",
+      "sources": [
+        "src/components/video/InnovationsSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/ab471ffaba-ac4bbfb2a_2.jpeg",
+      "bytes": 72809,
+      "sha256": "aef7325aa1eec6cd2553487d1c7ab30e0450981248010647b4e3040b24f86651",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ac4bbfb2a_2.jpeg",
+      "sources": [
+        "src/components/video/InnovationsSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/2395a27601-85da189b2_1.jpeg",
+      "bytes": 85944,
+      "sha256": "4c86fa9f47c3937801968d875d011cee0bf8988ef3a5dc12216e7bf47c2f1dc3",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/85da189b2_1.jpeg",
+      "sources": [
+        "src/components/video/IntuitionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/7f480ccf07-8c5d2358d_3.jpeg",
+      "bytes": 100766,
+      "sha256": "335e12bd96c217be7617e8d83ee6154d033e61d6ce60077f8fd150bdd948810b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8c5d2358d_3.jpeg",
+      "sources": [
+        "src/components/video/IntuitionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/62ba20d02d-15f3b3370_4.jpeg",
+      "bytes": 96195,
+      "sha256": "ff5d79209c9de6d58628a7a84848c2e3b5db75b714fc0ce3fa6a1f6495bc2fef",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/15f3b3370_4.jpeg",
+      "sources": [
+        "src/components/video/IntuitionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/4cd328f978-9d8f999f5_2.jpeg",
+      "bytes": 105329,
+      "sha256": "b3527d5e0d0974944dda3330945671ffbb5e18717e050d050c7958afd421bb6d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9d8f999f5_2.jpeg",
+      "sources": [
+        "src/components/video/IntuitionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/99575cdbe7-017dded57_5.jpeg",
+      "bytes": 88736,
+      "sha256": "904a8ffee54a46d6a6d0881aa689b0f872d7f3b6e2501800406ef4d0ef5dd27c",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/017dded57_5.jpeg",
+      "sources": [
+        "src/components/video/IntuitionSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/9f51e08457-243b05f5c_6.jpeg",
+      "bytes": 64207,
+      "sha256": "9dcd849f607ac7f22f7079fa90fe6d1a6fdbeec23dcfb7e003a5f29e10136596",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/243b05f5c_6.jpeg",
+      "sources": [
+        "src/components/video/InnovationsSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/cc329d4814-9d25d60f5_3.jpeg",
+      "bytes": 60658,
+      "sha256": "f22420cffa1ba8eb693e518b484ed65fe1762c9e5d07300bd1ccc3d088aacc3f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9d25d60f5_3.jpeg",
+      "sources": [
+        "src/components/video/LiminalStateSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/6c19f25ad7-5fefc489b_1.jpeg",
+      "bytes": 54657,
+      "sha256": "aac5c0c30f0b08399a397cfa591ce97f74b4d013095549210ed0d9d7bfc927a3",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/5fefc489b_1.jpeg",
+      "sources": [
+        "src/components/video/LiminalStateSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/ba3b38bad7-edbf69fe0_2.jpeg",
+      "bytes": 57873,
+      "sha256": "271b1cf5da25c0e8742e52eeea6f7f7fbb985b525fe60ffed6433886fe24aceb",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/edbf69fe0_2.jpeg",
+      "sources": [
+        "src/components/video/LiminalStateSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/f9b367d407-7ecb09c0a_4.jpeg",
+      "bytes": 62690,
+      "sha256": "98d28abd838bf1da4e48ab2290999b771b0ee2ae0c502af2299002f2f020506d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7ecb09c0a_4.jpeg",
+      "sources": [
+        "src/components/video/LiminalStateSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/25603cc22f-90c5a3eb6_7.jpeg",
+      "bytes": 67980,
+      "sha256": "556d7fc617cb5bde61ee33fe7f82a432b2a83e57ac7b25697a059001504d603e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/90c5a3eb6_7.jpeg",
+      "sources": [
+        "src/components/video/LiminalStateSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/dc83b2b807-fb922ad57_6.jpeg",
+      "bytes": 62825,
+      "sha256": "952c41c2d05ce486e93e8fdf591f7e501853a8943bb74166f5180b90c5321500",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fb922ad57_6.jpeg",
+      "sources": [
+        "src/components/video/LiminalStateSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/2ccdf45640-3416f46cc_8.jpeg",
+      "bytes": 60919,
+      "sha256": "43316a168e09f3b074210dfec03808cb3654a5cbd68649f8eee2329506c23671",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3416f46cc_8.jpeg",
+      "sources": [
+        "src/components/video/LiminalStateSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/c4c3bedd7d-44db3e321_2.jpeg",
+      "bytes": 92711,
+      "sha256": "604fc7accdc5d99b4f8b05a0d16a53069416b5abde5a12e3bbf455c37e003f4c",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/44db3e321_2.jpeg",
+      "sources": [
+        "src/components/video/LowTimePreferenceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/3d3de57c3a-0f1cc3a67_1.jpeg",
+      "bytes": 90723,
+      "sha256": "b1e1d7aeff649664d66852c1a25c9f3c31565cc26b3131069350a20f1fac3ea0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/0f1cc3a67_1.jpeg",
+      "sources": [
+        "src/components/video/LowTimePreferenceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/79e75386ba-7df754aae_3.jpeg",
+      "bytes": 86686,
+      "sha256": "60056f855d55252678882b95912ca23537c8cc8f1d0e25d07d92a2f5362d55bb",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7df754aae_3.jpeg",
+      "sources": [
+        "src/components/video/LowTimePreferenceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/494af0781c-d8ab06714_4.jpeg",
+      "bytes": 92208,
+      "sha256": "8a284f2126b06ae7cf83703ed0bd84948a3df48b6e5f5798ea0524b3e5983a93",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/d8ab06714_4.jpeg",
+      "sources": [
+        "src/components/video/LowTimePreferenceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/790ccbaebf-19369d180_5.jpeg",
+      "bytes": 92187,
+      "sha256": "c1b6406dc4ca089c4f1176e54bec9207213ddef78d5115102fbe51a9dc71acea",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/19369d180_5.jpeg",
+      "sources": [
+        "src/components/video/LowTimePreferenceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/7e042d3212-fa1364a22_1.jpeg",
+      "bytes": 58152,
+      "sha256": "95949742aad43124d71b63f4cd9b5df22e8423e4da2dd18344c709d43b3135c6",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fa1364a22_1.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/42dbda64df-3912bc9d7_2.jpeg",
+      "bytes": 72706,
+      "sha256": "69728add16f5461e76507559cbcfad4264703a5f307ae3e715a8be5b890a676e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3912bc9d7_2.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/79159230ae-d274febb0_6.jpeg",
+      "bytes": 82170,
+      "sha256": "e9be336edbf2c67768985e834b831ff13988ced760d47e31cf6f304c44f7586c",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/d274febb0_6.jpeg",
+      "sources": [
+        "src/components/video/LowTimePreferenceSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/e83664b393-5294b2847_3.jpeg",
+      "bytes": 81250,
+      "sha256": "70d1ad592f0db8b6a205f9bed77349c9a62bbc3ab300c37220494828bfec14bd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/5294b2847_3.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/070097ffb6-2753070d9_6.jpeg",
+      "bytes": 61181,
+      "sha256": "0a692475db50e181466ca79d55f633d930254bc8683897c368d42384fb55167f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2753070d9_6.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/cd8c3681ac-f61350de1_5.jpeg",
+      "bytes": 64771,
+      "sha256": "de999b01ea40ebe023972e21e768e2d4121452d299dc350fb34f418a06c0ecbe",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f61350de1_5.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d4d19d93a9-e79d380f8_8.jpeg",
+      "bytes": 62190,
+      "sha256": "2bfae674bdfbaa87078cbdd7408d9fb55738fe3b5965516425feaec6af97e40a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/e79d380f8_8.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/4d212de823-457e70508_IMG_0314.jpeg",
+      "bytes": 159640,
+      "sha256": "e24a73dcecbc45e1f79e146fb8b204c558e6f5e35af1db6a3247e3fe7d68f3c7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/457e70508_IMG_0314.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/3016ec7b37-303b9b060_4.jpeg",
+      "bytes": 62679,
+      "sha256": "c6cc755e7aacfae7a76bfd69ea85f89b31a0cb0dc396e08a6bc8191da8c33103",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/303b9b060_4.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/8ca3086df6-04b902470_7.jpeg",
+      "bytes": 60554,
+      "sha256": "b787635d4ce1ebfe4be6082016b22dbfdd78398c118f11d3ee0ef8adc7a94b4a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/04b902470_7.jpeg",
+      "sources": [
+        "src/components/video/MonetaryAbuseSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/3a358229d7-9aa3b66eb_IMG_0313.jpeg",
+      "bytes": 104828,
+      "sha256": "454a592d4f6c96a864d949cd4b95bb03de727900527375bf31092f6b17362037",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9aa3b66eb_IMG_0313.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/5fa52bc080-4b4a6b270_IMG_0317.jpeg",
+      "bytes": 161016,
+      "sha256": "eec975f3cc1726a8aed8aed54c0dbbbc41f552c2a68a55a61a72c6cf800346e0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/4b4a6b270_IMG_0317.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/2591c70de0-5534344f7_IMG_0316.jpeg",
+      "bytes": 152210,
+      "sha256": "7b247e60513074ec196640ff4dd675b7c70a1f319ed0bd48160829f9e26e9f55",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/5534344f7_IMG_0316.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/fa8a02185b-f1d444b08_IMG_0318.jpeg",
+      "bytes": 161456,
+      "sha256": "047ca25cfd591423993f7d54e2afe4757bc6c16413083006100ee5a131c5099f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f1d444b08_IMG_0318.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/62aec61f56-8af70a424_IMG_0315.jpeg",
+      "bytes": 156587,
+      "sha256": "5ad3c133c82c610a9efe0786b0e1cb09570f2352a6320cdc7ca40e1e9dece8f9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8af70a424_IMG_0315.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d8ba72d1f6-73e7f7035_IMG_0320.jpeg",
+      "bytes": 125476,
+      "sha256": "7e7ee3e50f62dad96883b02f1d8b63f6be157718345453a3609336e26310a382",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/73e7f7035_IMG_0320.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/51e1d2e26e-21f7b2ab1_IMG_0319.jpeg",
+      "bytes": 127001,
+      "sha256": "24be686ff5e8f4abbfc8ac48dcb1d30ea7bce1023bddb7d26da48408aa67f242",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/21f7b2ab1_IMG_0319.jpeg",
+      "sources": [
+        "src/components/video/MoneySlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/fcd46b0c18-f5d02032b_1.jpeg",
+      "bytes": 69471,
+      "sha256": "8edc5d9527dfa51faca60657dc8e2d6e50d8c4d2b54620324d60b8aebe272421",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f5d02032b_1.jpeg",
+      "sources": [
+        "src/components/video/ValueSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/7e0475b4e1-c23f53c33_2.jpeg",
+      "bytes": 56153,
+      "sha256": "399034e1084440735f34d19213ac3913aa5d185c9476a40dc54483dbc8b68172",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/c23f53c33_2.jpeg",
+      "sources": [
+        "src/components/video/ValueSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/b020f19054-1a0cce762_WhatisBitcoin.png",
+      "bytes": 49021,
+      "sha256": "ad2b23fca718e490b4f15a166e9a547a2591dabe684f92857f65071bcd73b9ac",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1a0cce762_WhatisBitcoin.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/1f30f5fc91-64cb4deea_Screenshot2026-07-19at104248AM.png",
+      "bytes": 420646,
+      "sha256": "fe47a0457a3986ac05a657a5f56d4fa50cde99cf3ec96952ca60b5d61a57f21b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/64cb4deea_Screenshot2026-07-19at104248AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/e19bd3b3f4-24c683137_Screenshot2026-07-19at114324AM.png",
+      "bytes": 1053707,
+      "sha256": "04b5e5f5224b1c5332a1cfb530cece2b625d6c14aba48229d0beea1807b01ca7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/24c683137_Screenshot2026-07-19at114324AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/b07f4ad742-9d1b18409_3.jpeg",
+      "bytes": 62789,
+      "sha256": "a044b47ff13fa1ae702536c0869f2980513902f7a70af9bed07fb8fcdb1410fd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9d1b18409_3.jpeg",
+      "sources": [
+        "src/components/video/ValueSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/2939c7a81d-a9ac33cb0_5.jpeg",
+      "bytes": 57552,
+      "sha256": "b9f92d856d2423e1e7a0d99d72d40c1f794d3fc5b71e5c4f5422186706ef490c",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a9ac33cb0_5.jpeg",
+      "sources": [
+        "src/components/video/ValueSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/95e0d53da9-51a3364ca_Screenshot2026-07-19at105308AM.png",
+      "bytes": 52430,
+      "sha256": "e35f03a07663498972fbfa4f9c11c11a240954d694cc7a76501982af2841b847",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/51a3364ca_Screenshot2026-07-19at105308AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/97b3bc7c99-980fd3632_4.jpeg",
+      "bytes": 74101,
+      "sha256": "9c4253adc8ef45157dda12ba783863669286d2f10141ec5d43b60b595a97c825",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/980fd3632_4.jpeg",
+      "sources": [
+        "src/components/video/ValueSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/1f7d1b1616-2cea34207_WhatstheProblem.png",
+      "bytes": 44259,
+      "sha256": "44fb617fbace6f2cc8bec3c78136cd81d05ebbe3a2020ff37158c9f6cbb03dbf",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2cea34207_WhatstheProblem.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/910f8b3660-b8894e7a8_Whatisbitcoinforkids.png",
+      "bytes": 70413,
+      "sha256": "a99f3cd7e772241fab6f31d464a9464cff549935142c7bba1777eed850d6b6a3",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/b8894e7a8_Whatisbitcoinforkids.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/25f997fe62-61d4446ff_IMG_0093.jpeg",
+      "bytes": 126889,
+      "sha256": "ae565ae7c7912f85b622af8101a668f90058453a497eff04cd43d370750c6c42",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/61d4446ff_IMG_0093.jpeg",
+      "sources": [
+        "src/pages/DiceEntropy.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/073dd4e9f7-fc9888eb0_6.jpeg",
+      "bytes": 60772,
+      "sha256": "e6c008f38b96d780b150f392efe77ba53e633c6386cc9628b61cf091583e509a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fc9888eb0_6.jpeg",
+      "sources": [
+        "src/components/video/ValueSlides.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d4ae509713-8dd2206c9_IMG_9250.jpg",
+      "bytes": 120208,
+      "sha256": "71fc51fca1de67be83b4e4094b5af6aca033d79ef56b69730f6066f26283c8bf",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8dd2206c9_IMG_9250.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/a1ce55d516-edd1b1d9f_Bitcoin-opensourcep2pmoneybitcoinorg.png",
+      "bytes": 14531,
+      "sha256": "eeeb06c6502a48ea381a5d93054239504cd20097900cc4ce75e3ae65134bb139",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/edd1b1d9f_Bitcoin-opensourcep2pmoneybitcoinorg.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/a461403b79-fd6683d3c_Selfcustodyscorecard.png",
+      "bytes": 43775,
+      "sha256": "7bdc1e2f3a6052ca5922ec0dbc32786099c4421f02246daab148c135b7335bf4",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fd6683d3c_Selfcustodyscorecard.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/c327188c8d-eded87be9_TheHistoryofMoneyexplainedin3minutes.png",
+      "bytes": 62344,
+      "sha256": "9c25108f7aacb60633103d0c80894306ae87573fd400b576ef1bd4a733d4c906",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/eded87be9_TheHistoryofMoneyexplainedin3minutes.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/985b88cb4e-6350497ea_IMG_0226.png",
+      "bytes": 7623,
+      "sha256": "f4f95bff46d9aff15a16b27baef2148405418e2b2b2c1389b99df07ff39d911f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/6350497ea_IMG_0226.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/651b53e8a4-40fa4e03d_7D938F96-1A3B-4CA1-AA69-629E5A0659B2.png",
+      "bytes": 99518,
+      "sha256": "ffebd7a2407e7f425e3c04a2d370686933c8b5dfdfae1bc2a4867a641cae4c0e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/40fa4e03d_7D938F96-1A3B-4CA1-AA69-629E5A0659B2.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/4a8b69cd35-84eefe023_Screenshot2026-07-29at103524PM.png",
+      "bytes": 396283,
+      "sha256": "7c50d79a71a19d047f53be4a68a193b245be4760053b0588b87abd168c573f53",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/84eefe023_Screenshot2026-07-29at103524PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/df8266f544-98084e5b2_Screenshot2026-07-19at105402AM.png",
+      "bytes": 13715,
+      "sha256": "e78830741841ba9a60d5278cf4f05512adac3abfdb5b7944a83d8c452f38290a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/98084e5b2_Screenshot2026-07-19at105402AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/f53f1b7d07-f7731c7b3_Screenshot2026-07-19at105418AM.png",
+      "bytes": 22250,
+      "sha256": "d02a926d587e34a60dc3b28bfbbc054f6add8ac79c8d1f1778dcbbd4a2a01ee2",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f7731c7b3_Screenshot2026-07-19at105418AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/316ccbc6e5-625385e18_Screenshot2026-07-30at40643PM.png",
+      "bytes": 13475,
+      "sha256": "3ad027cbd7c03f86ddc178d76041001c019e9105bdb2490aa54b7dda70d2a1e7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/625385e18_Screenshot2026-07-30at40643PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/63a841f97e-50ff0ced8_Screenshot2026-07-30at40653PM.png",
+      "bytes": 15748,
+      "sha256": "a6d72d043628d8f932a57b9f46c0c3458e1f0099c1462336d1b1e800d33a2791",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/50ff0ced8_Screenshot2026-07-30at40653PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/e59a1b9efd-402a8c32d_trezor2.png",
+      "bytes": 175253,
+      "sha256": "8ed8a23e6e1aacda8400f94553fd65937cbc82ad62c4bd664598737464d6a507",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/402a8c32d_trezor2.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/5f2ef87981-hqdefault.jpg",
+      "bytes": 13553,
+      "sha256": "daff0596b1b2be7fe5e10118dcd458f134b1b8ef6cc970c128a7d80c114344a2",
+      "kind": "image",
+      "url": "https://img.youtube.com/vi/78m9nDKnsoI/hqdefault.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/ab9c025784-bf38b6e27_Screenshot2026-07-31112626.png",
+      "bytes": 22038,
+      "sha256": "19bd8e3072b68fee010566e314486d230fdb7462e578ef12ebf48086103085a4",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/bf38b6e27_Screenshot2026-07-31112626.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/1b02ab61dc-9f00c5158_Screenshot2026-07-31113559.png",
+      "bytes": 43589,
+      "sha256": "74eed3d96a8cd70ee82b2d1b59e7a0b0ed619438daa4f01f91a01f60137b4214",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9f00c5158_Screenshot2026-07-31113559.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/c75b30a722-52f93d849_Screenshot2026-07-31114332.png",
+      "bytes": 240875,
+      "sha256": "95218a29aa59a78586607e04428b961d5256b5e5e24e50ac09421dd4d1c6f5ac",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/52f93d849_Screenshot2026-07-31114332.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/51935e51c9-hqdefault.jpg",
+      "bytes": 31615,
+      "sha256": "3846445071ce8d7262f3f4277349f9ddaf7696372fe510202333c8c577bd309d",
+      "kind": "image",
+      "url": "https://img.youtube.com/vi/672t4g6kIJA/hqdefault.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/6de8cc65d3-31c455090_SparrowWallet.png",
+      "bytes": 24282,
+      "sha256": "d18323f18459a2d96af080866693e410ce001ca6a02fe3e2b1401e4ba384e9f8",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/31c455090_SparrowWallet.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/886656c1e8-834ed770f_Newblock-3.png",
+      "bytes": 317997,
+      "sha256": "90f0f97a203acd348faae05bc81c7ae55ca824b500f6a3171f7f4e36b96e4362",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/834ed770f_Newblock-3.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/c4378c69d8-1bb5221ca_IMG_0225.png",
+      "bytes": 6493,
+      "sha256": "b1c166841adcfaa1dd80bbd3cc373df241acaa723fda5a8785d926e802ef0908",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1bb5221ca_IMG_0225.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/cab6de5315-f138b46ddf129bdb679991ecae977bbc8479769e-1920x1920.png",
+      "bytes": 117210,
+      "sha256": "b787b4041ef5c5f4cb033ed774cba1b9b5eee3c08534b619f950289d923b7d86",
+      "kind": "image",
+      "url": "https://cdn.sanity.io/images/ozrlz7k9/production/f138b46ddf129bdb679991ecae977bbc8479769e-1920x1920.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/5fd624957c-60845842c_IMG_9992.jpeg",
+      "bytes": 112767,
+      "sha256": "4a3376e3af844a529101bbb9f06ee33fb37fef54013a48a339966036b48f17f0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/60845842c_IMG_9992.jpeg",
+      "sources": [
+        "src/pages/Resources.jsx",
+        "base44/functions/generateAirGappedThinkPadPdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/88afd832ce-9124cc561_generated_image.png",
+      "bytes": 72648,
+      "sha256": "748d965f17967447b686036f9b1faaa800c80bdb9a3fee48afcfe84463aff54b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9124cc561_generated_image.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/39be4fc6fc-36bec2dce_phoenix.png",
+      "bytes": 33894,
+      "sha256": "e4954952b32d654903d60840259fda6753a00526f9924328ecd882a40647e2bb",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/36bec2dce_phoenix.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/79ca2c0313-gallery-2.jpg",
+      "bytes": 75905,
+      "sha256": "ea4339acdd32860762e7b45aa847e29e932caa0d811230b05ba791151ae1e198",
+      "kind": "image",
+      "url": "https://storage.googleapis.com/cdn-foundation/website3/images/sections/buybox/gallery-2.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/86367a89ac-plus_compare.svg",
+      "bytes": 527286,
+      "sha256": "ec814901fefe0b2355d245ebc0cb2509712b4f022361f9fa3ebab24b0d195114",
+      "kind": "image",
+      "url": "https://blockstream.com/img/jade/plus_compare.svg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "images/4352b7703c-94f672190_Screenshot2026-07-30at34247PM.png",
+      "bytes": 12809,
+      "sha256": "2e71932296d34a5d40d21cc9a61026bc7a7177eecc9b7ca32e7370327d321557",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/94f672190_Screenshot2026-07-30at34247PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/9afc052364-5ab4366d0_seedplatecom.png",
+      "bytes": 64075,
+      "sha256": "da0b5e1e8b65a0a6d3c3a836c1bfcb69681f4665b588028bb9e4fc97e5be932b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/5ab4366d0_seedplatecom.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/21c0592e45-a4bbfb9cb_IMG_9984.jpeg",
+      "bytes": 14156,
+      "sha256": "7116f13b432b14f5e73b0b5ec731f62ae83be0dc9b9062bd1b4fe7864db4359f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a4bbfb9cb_IMG_9984.jpeg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/3f0fb7a3dd-5d13abecb_manna.png",
+      "bytes": 52012,
+      "sha256": "3f3743b153cc37d7e10bbb79e447fd32fa8f8fd6dbe103adca479e03d2964f2d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/5d13abecb_manna.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/48a1b03882-885d525f5_IMG_9985.png",
+      "bytes": 14627,
+      "sha256": "5f098df5891896cb00dbc0e189b083222f61826727833e32aa7e581f610a1451",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/885d525f5_IMG_9985.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/c51c07e662-4f4adbf06_Stampseed.png",
+      "bytes": 23442,
+      "sha256": "5cc6406e5d0da8ec65cdda09a68b1ea7eb8d3c31bcc4830abf775f29b86fa753",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/4f4adbf06_Stampseed.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/5d60ef0af2-1cb866794_muun.png",
+      "bytes": 51865,
+      "sha256": "c545a219a3245f842f87fb8111e86b8fd4b5bf2e2955fb9c3b6aa1c3e4e12a02",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1cb866794_muun.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/4ac7a19370-608eb3ad2_Screenshot2026-07-30at33951PM.png",
+      "bytes": 5198,
+      "sha256": "83b8544f0d462f72cd9a66ad7a7a5acbb93e4b47bea6599f45fd227ffd8518dc",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/608eb3ad2_Screenshot2026-07-30at33951PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/3e2a0b1ab4-6916652158202d9ed80ed952_secure-your-bitcoin.webp",
+      "bytes": 18048,
+      "sha256": "98cae80c6a6592e0ceb46c3b0bfd2782c8ca20c11f7ff5c6a9de3a02fed36d25",
+      "kind": "image",
+      "url": "https://cdn.prod.website-files.com/690dad5309b06d61b96c33b8/6916652158202d9ed80ed952_secure-your-bitcoin.webp",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/webp"
+    },
+    {
+      "path": "images/5c764af3a2-78be5a039_Thelightningnetworkexplained.png",
+      "bytes": 39511,
+      "sha256": "dbe8111042192732db8e30f3f939dfdc15fc7bbe17f79b714ef4785cf049add6",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/78be5a039_Thelightningnetworkexplained.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/16796cf433-da16afe2b_BTCFrame-Livebitcoindashboard.png",
+      "bytes": 31158,
+      "sha256": "81999221c54615d91d75adb62d6c403cb7357947acf4383eb6698c0e78d4bbb5",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/da16afe2b_BTCFrame-Livebitcoindashboard.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/dc6286a0f7-2da1874b8_TheRationalRootonX.png",
+      "bytes": 35021,
+      "sha256": "19bc66eac17ec329152a4b419de9f6cfbed0d12790bb9f19c1263c2d28dca5ef",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2da1874b8_TheRationalRootonX.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/db965964e4-730a855f9_Screenshot2026-07-19at11443PM.png",
+      "bytes": 319675,
+      "sha256": "4825abbf5a1b6f125feaa61f6856de33696c80584e3138de3c10e47d1ad2a512",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/730a855f9_Screenshot2026-07-19at11443PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/e14d7b3017-1d9f0837e_ClarkMoodyLivefinancials.png",
+      "bytes": 5910,
+      "sha256": "fb8289ab6fa6fdc73816c3e4f7a5df1ed9c114c07acb0a7e9965fb4a99160a98",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1d9f0837e_ClarkMoodyLivefinancials.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/de9f1f11f9-ad5ede62d_speed.png",
+      "bytes": 140102,
+      "sha256": "0f4f252009bd9a992f5fe3919f9f9bfd44cd1d59a870bf814456ee322ab3d11c",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ad5ede62d_speed.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/65e229def4-4e977d70d_Screenshot2026-07-19at114623AM.png",
+      "bytes": 46290,
+      "sha256": "c51c95ad0ae94317ab777b5c4fbbf1403a081171110fd12a66b8bca8a90d97d5",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/4e977d70d_Screenshot2026-07-19at114623AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/cd494412a6-b3c36e645_IMG_0231.jpeg",
+      "bytes": 12867,
+      "sha256": "29c2715f49a9662797dea98375699b2b3ee24c6bea40b48b827fe4d8826c7be9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/b3c36e645_IMG_0231.jpeg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/db472cce66-076a880ef_Screenshot2026-07-19at104713AM.png",
+      "bytes": 77896,
+      "sha256": "94e9e166f9cd2c9cc349cb212e65e25074a5ed6e0fc1a64576c3b3e1c3485487",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/076a880ef_Screenshot2026-07-19at104713AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/3467fc83bc-379b42d4c_unchained.png",
+      "bytes": 40202,
+      "sha256": "d7938278f699b7275b5717c9e9faaadc94b5240ef95ee1a30552a68ab779b9ad",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/379b42d4c_unchained.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/d1f73e647e-adda870e1_Screenshot2026-07-19at105008AM.png",
+      "bytes": 21437,
+      "sha256": "54171f0d99955588673ff7dc25324e43e1fba050b5454a3403242401f1e14afb",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/adda870e1_Screenshot2026-07-19at105008AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/624a376fee-bbadc891d_SOFTWAR-Audiobook.png",
+      "bytes": 29171,
+      "sha256": "d7343d348dd386589834a9abb2448c497b0c40f8cd12eedd008986cbb8927ae0",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/bbadc891d_SOFTWAR-Audiobook.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/96f783c4b1-2b79826b1_Softwarpdfbook.png",
+      "bytes": 28952,
+      "sha256": "7a1a01d4a6a8edf38c74265933a0fa72e4c1b8a8dc18d0d4a717a69638a049a3",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2b79826b1_Softwarpdfbook.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/92ff72f1bb-63bc972a9_TheGoldstandardBookpdf.png",
+      "bytes": 26596,
+      "sha256": "e4431512a6ff710fe8e36b3d01c8e72b15b7e506630130248d43fd495d2a9c9a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/63bc972a9_TheGoldstandardBookpdf.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/310f4332d1-e80ad27ab_Screenshot2026-07-30at34523PM.png",
+      "bytes": 5502,
+      "sha256": "e9d14756de5f7f4cec9c2999ef82dc932c0653f616ca206ea0c41bfb2d881667",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/e80ad27ab_Screenshot2026-07-30at34523PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/e2c9d1226c-3c2139798_TheBitcoinWhitepaper.png",
+      "bytes": 43438,
+      "sha256": "4ce32a62da4e281ff24f53709e5efbc420e7a879e0172c5cb14f904f8b76abd6",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3c2139798_TheBitcoinWhitepaper.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/c6856adb0f-4046ae1f5_Screenshot2026-07-19at115340AM.png",
+      "bytes": 18365,
+      "sha256": "1b694416f03ddadbccb2b4cd75732d3bd591010b3a4d673531a7e90b40a68ecd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/4046ae1f5_Screenshot2026-07-19at115340AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/7f76d81808-ef5071424_21TruthsofBitcoin.png",
+      "bytes": 76715,
+      "sha256": "a194a14548dc297cf4da5e4db856e4248b3ee8e5651a144d45e5fe1a6f3b3d77",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ef5071424_21TruthsofBitcoin.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/36ab27be81-519d12e63_BitcoinBookshopcollection.png",
+      "bytes": 19297,
+      "sha256": "f83ddebde54e77cdc857dfb83d0d761ac02dd332febdc70353a2ecaf6c663454",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/519d12e63_BitcoinBookshopcollection.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/265406a98e-256547788_Teachingkidscriticalthinking.png",
+      "bytes": 87141,
+      "sha256": "8b117dce8312e6752f7c817b4fcca4bc99903474f9063509dd696b3dfe3f7ea9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/256547788_Teachingkidscriticalthinking.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/b8c6389838-22158a422_Bitcoinminingexplain.png",
+      "bytes": 39128,
+      "sha256": "47df8335f7bf8375a3c8d7af9e4324fd0271e1166ea814e52631608fa54950b7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/22158a422_Bitcoinminingexplain.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/eb80239f81-0Jf9AKM2_400x400.jpg",
+      "bytes": 39117,
+      "sha256": "092202411b14a187a11958fb5d050ce6e553d8ccfe3afca49dcf157c50dddc72",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/2091519971285258240/0Jf9AKM2_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/c06ea1e322-5QAJUNt4_400x400.jpg",
+      "bytes": 17184,
+      "sha256": "527b143265dd6e123edca559d72d3d3532d4c2e7a5dc20b5f2e75e2780795f9f",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1653379213947203586/5QAJUNt4_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/5061e9335f-7a75f5315_BitcoinstandarpodcastwJackMallers.png",
+      "bytes": 33552,
+      "sha256": "d44877f9f8c760c69983d9c4bde158d2b0474db9234eb6146ad655a1654b2947",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7a75f5315_BitcoinstandarpodcastwJackMallers.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/2a12c871a8-7f06b4fa9_HowdoesBitcoinMiningactuallywork.png",
+      "bytes": 72431,
+      "sha256": "d05f5c163d9092cbdeb2164b80a81189a51584bd94f2ef39b4a2f9bfc70695f9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7f06b4fa9_HowdoesBitcoinMiningactuallywork.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/27d43b2177-wDxvuHr__400x400.jpg",
+      "bytes": 31273,
+      "sha256": "9bb5a2ef4d29b2fa84dcf6ca42a43cdc1bf0b671e800656b12ee390eed0b46b6",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1582399006986076160/wDxvuHr__400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/d9acdad6a3-50aa25b05_Whatdoesbitcoinminingdobesidesminingbitcoin.png",
+      "bytes": 50823,
+      "sha256": "3c8df40dff7585225d9ba1c7c9b371942731d409608d781be70567741472f039",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/50aa25b05_Whatdoesbitcoinminingdobesidesminingbitcoin.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/44201040b8-7YDcrAhI_400x400.jpg",
+      "bytes": 18559,
+      "sha256": "5af69f8eb066a7a87a706d54b897ef1d7b28dcfd39bf8186d29b6930655d9f74",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1867105282712592384/7YDcrAhI_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/07038838f7-c1ca445b2_Screenshot2026-07-30at11427PM.png",
+      "bytes": 52319,
+      "sha256": "52d78c7f55c29eefa8019690acd459b6f25b21efda0f79ebdc99ecf6c0320d02",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/c1ca445b2_Screenshot2026-07-30at11427PM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/396e935576-bZIoBxFq_400x400.jpg",
+      "bytes": 41787,
+      "sha256": "f1e4f4da87f02cff5b04c677483740cb10af057cdc2fbfb4a7f088137b535178",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1719881482070540288/bZIoBxFq_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/6c8f2fa7d8-QseBwxH-_400x400.jpg",
+      "bytes": 23754,
+      "sha256": "a8bb882931a156c377e8c3cee311c7fb175ec07352318f4388522479de291f2d",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1644914021844529152/QseBwxH-_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/9c507d4cce-WkWihAzJ_400x400.jpg",
+      "bytes": 19790,
+      "sha256": "f3db0322af92dc738582b3ee5d22071b274642583fb449d6d07e03e61ef04fa1",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1676478706187894787/WkWihAzJ_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/4b1a2452c9-VT2U7EOf_400x400.jpg",
+      "bytes": 7704,
+      "sha256": "ad69ac84bac2769a7d8811c9562343c7ac745f4a2f685e1bf4457930d04c9652",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1841551833548128256/VT2U7EOf_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/30914dd6ae-rNqSrIG9_400x400.jpg",
+      "bytes": 15853,
+      "sha256": "5c7e1892403a9f7848c8a73def40d68577351660f943c597a3c2aa892fa209b8",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/2084171247617990656/rNqSrIG9_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/306f91c5d5-8h_z4Dcd.jpg",
+      "bytes": 32796,
+      "sha256": "273b7f39cb666d00cd3cfe88ca91fdd42060b9bafc246a675994ce6d363425c1",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/2084076785969381376/8h_z4Dcd.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/44170fedf4-NUUvFjdP_400x400.jpg",
+      "bytes": 18900,
+      "sha256": "55aa17a29229b45343e0ac30f88faf02567bc4321d734ccd4c0399dfe2894acc",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/1878893775835045888/NUUvFjdP_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/1aec75a008-bc3cbf1b1_JoeBurnettonyoutube.png",
+      "bytes": 62354,
+      "sha256": "f9a14843d029c38dd190068541fa7fda40a3a6e584bc3589a0fe68b341e5cf05",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/bc3cbf1b1_JoeBurnettonyoutube.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/9ab131458b-l7t-ovHg.jpg",
+      "bytes": 56060,
+      "sha256": "9e72ebdf11b78c38f069893a0a2ad29d3cdb8119e5aa291f504563e10ab06827",
+      "kind": "image",
+      "url": "https://pbs.twimg.com/profile_images/2058252912191475712/l7t-ovHg.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/0ed5dd7cee-3073337b0_Screenshot2026-07-19at112900AM.png",
+      "bytes": 78520,
+      "sha256": "27536957fa3256751dd23f98036f2f6bbaaea7ea0dfe7c18326c717eeff47ecf",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3073337b0_Screenshot2026-07-19at112900AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/68cfa77169-aca603f7c_MullvadVPN.png",
+      "bytes": 21986,
+      "sha256": "0ad2988efec258878b710c7005dcb61e2bf7733fdc5cac115c8007fda1bf409d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/aca603f7c_MullvadVPN.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/35c082f57e-20e595381_IMG_0250.webp",
+      "bytes": 30662,
+      "sha256": "2775b36cb5314d29b4df0c95dd796f201897612f136c91a226c334ca1630d71f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/20e595381_IMG_0250.webp",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/webp"
+    },
+    {
+      "path": "images/2ae3f2e178-e4d842d0e_Screenshot2026-07-19at110545AM.png",
+      "bytes": 12314,
+      "sha256": "3a3c78e370a123f230d07a67fd0a423d8b04dce74742990d272e3bcc41c81baa",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/e4d842d0e_Screenshot2026-07-19at110545AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/ed3f0f97dd-7d64109df_Screenshot2026-07-19at111035AM.png",
+      "bytes": 51449,
+      "sha256": "6a63b3ffb6dcbaa9de710d24892d1e308dd36ce4ac3472bfeb6d85c628383526",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7d64109df_Screenshot2026-07-19at111035AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/188501bdeb-c08b957d9_IMG_0051.png",
+      "bytes": 7279,
+      "sha256": "1a1ff6dea48d157466f08e0f4ccb4fad1f24c4bb8b2de932d40221d62b287239",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/c08b957d9_IMG_0051.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/6dcee26b72-12e3a3593_XRPRLUSDRipplelabsexplained.png",
+      "bytes": 47556,
+      "sha256": "5fa998d46f4cdd23442da877e4ecc163e45dab2c7c618720f0539d0dd9a28cbb",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/12e3a3593_XRPRLUSDRipplelabsexplained.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/09840233cf-9bec81ec2_Screenshot2026-07-19at113002AM.png",
+      "bytes": 552841,
+      "sha256": "49b151aadb5b8f6f24003efaded9ed008ce5deed48f7ea7b31ce3ae9f44f812b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9bec81ec2_Screenshot2026-07-19at113002AM.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/3dfe70914d-8bd0b6a6d_Bitcoindegree-youtubeshorts.png",
+      "bytes": 38903,
+      "sha256": "768334ee63e01935b8310ca08b94b1ac6bddf7bc7560af2a43f1e1175eaf39b7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8bd0b6a6d_Bitcoindegree-youtubeshorts.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/76b63170b0-fffc7b25e_whatisnostr.png",
+      "bytes": 43653,
+      "sha256": "0d402245840746179af04715d842edf68a996290445b31bd6bcda44d127768c7",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fffc7b25e_whatisnostr.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/d5837583ca-60f1062c4_IMG_0279.png",
+      "bytes": 331910,
+      "sha256": "fe6889a12831c6f4507979ac1436a7710f466a9140fdfcbb0d0cd0ff288ce382",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/60f1062c4_IMG_0279.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/09abc15474-98fe7cb6d_Cyphermunkhouse.png",
+      "bytes": 71957,
+      "sha256": "692aecc167c024a027e75036f8b355a64528f9fdbf50583925ffc7e2c0a5e0e9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/98fe7cb6d_Cyphermunkhouse.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/bb4481c64f-5c728ca5d_primaldecentralizedsocialnetwork.png",
+      "bytes": 45517,
+      "sha256": "a19c003f76a170ab82d91965b5fafaaa43847defec57b1b3e6938727eda298d5",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/5c728ca5d_primaldecentralizedsocialnetwork.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/1389bc9fc5-381174ca6_Damussocialnetworkyoucontrol.png",
+      "bytes": 38764,
+      "sha256": "395314f5c8284dcd246728ed7e291df6ef4e576ddf005734222247d6482d5146",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/381174ca6_Damussocialnetworkyoucontrol.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/4345f94ac3-6422c5b68_Xbitcoinvideosthread.png",
+      "bytes": 16193,
+      "sha256": "c52e8871b0f3f862bdbc66b37ecb67a7029699b96eb67dd248bb1212b59d9305",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/6422c5b68_Xbitcoinvideosthread.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/a5e2f5888f-54550acb8_generated_image.png",
+      "bytes": 27404,
+      "sha256": "0181bbaa2bb213f98a41fd177845c148b58808df981f976788a86bb2c1b967ce",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/54550acb8_generated_image.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/ba1f8b0312-191e46903_generated_image.png",
+      "bytes": 30946,
+      "sha256": "8876574d1bf7cc4341ec744504999b647c318ced0c2fc111aed5ad567f19d786",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/191e46903_generated_image.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/8129dbfc43-1a42e954c_NOSTR.png",
+      "bytes": 33993,
+      "sha256": "7b9356ba447f60216fac228702b3e1e009660e8b5deffc9884b60682a830998b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1a42e954c_NOSTR.png",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/b31d5d6f53-033d83c2d_IMG_0287.png",
+      "bytes": 357632,
+      "sha256": "176fc1943b4c6a336fa451bf8c536e1fd445e78ecee5bcd67742bd22cbaa766b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/033d83c2d_IMG_0287.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/4a448b1d30-67a4dce1e_IMG_0290.png",
+      "bytes": 156617,
+      "sha256": "538dec5517f6178867131516cfc8ed21648250edd917ba958ecc2319cee4546d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/67a4dce1e_IMG_0290.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/ad4d1ee327-11289adef_IMG_0289.png",
+      "bytes": 235007,
+      "sha256": "bfdfb0527c50cb845b54017ef72bd22d6623b0c9d747a3255249b65d50143120",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/11289adef_IMG_0289.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/fa0647286e-40dc1d2c0_IMG_0284.png",
+      "bytes": 202697,
+      "sha256": "081d30852cdaf2384aca0376d09e1701fbde0d1247bf688a440c5c97c6f80bcb",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/40dc1d2c0_IMG_0284.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/0f67639d63-f322604a6_IMG_0285.png",
+      "bytes": 179127,
+      "sha256": "42a7fd6471d91b68642174e636861ad3407b46d09992614b28b7e9e4590c9b6e",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f322604a6_IMG_0285.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/ed48bda419-2b4223e46_IMG_0286.png",
+      "bytes": 198212,
+      "sha256": "84f6c2e452e1786a516ca9c3f1a76567f528f4b994728617c26c17c4f428545b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2b4223e46_IMG_0286.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/a3398884fa-ba056143e_Newblock-2.png",
+      "bytes": 317997,
+      "sha256": "92336f386c2f1a855a47e79e136e54f0d64209739554b7953b7cb956d2a2b1bd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ba056143e_Newblock-2.png",
+      "sources": [
+        "base44/functions/generateColdStorageGuidePdf/entry.ts"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/f76b9a006e-7950e2137_IMG_0280.png",
+      "bytes": 190905,
+      "sha256": "5a25a74d13e5725466c3dffd01452a7c4556adbc778cd1349e761e21ccfedd88",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7950e2137_IMG_0280.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/2079e3446f-ed50f6843_IMG_0283.png",
+      "bytes": 204981,
+      "sha256": "5bc78d11a1fa3112bccebf4aea0347c145b6b22e46ce10659b4be6162c9025dd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ed50f6843_IMG_0283.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/dc3aa1090e-1728911016-og.png",
+      "bytes": 11944,
+      "sha256": "41214a9f649878024a3c7e1e9d6e012273820cbca482dda68404993b04b0dcde",
+      "kind": "image",
+      "url": "https://www.datocms-assets.com/99305/1728911016-og.png?auto=format&fit=max&w=1200",
+      "sources": [
+        "base44/functions/fetchLinkPreview/entry.ts"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/79bfa762d6-6eb977e97_WhatsAppImage2026-07-07at090709.jpeg",
+      "bytes": 26712,
+      "sha256": "7a645f1c4af5a9c417973dbc7029bf28759f5b3c53d2e23520d74b8af40790bc",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/6eb977e97_WhatsAppImage2026-07-07at090709.jpeg",
+      "sources": [
+        "base44/functions/generateGreshamsLawPdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/552de09650-fcbef2e7b_IMG_0281.png",
+      "bytes": 218714,
+      "sha256": "e934c790d43666afc10c1f91e45c7b60e7e80546c1445c33fb0ba3e13ad1e11f",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fcbef2e7b_IMG_0281.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/d0b1793766-20fae6914_WhatsAppImage2026-07-07at0907288.jpeg",
+      "bytes": 33390,
+      "sha256": "b9b943273f691fed18579b15225ad47c0d02a869666bff7e343a156242657ccd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/20fae6914_WhatsAppImage2026-07-07at0907288.jpeg",
+      "sources": [
+        "base44/functions/generateGameTheoryPdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/5762f390ab-33f2e24a2_WhatsAppImage2026-07-07at0907282.jpeg",
+      "bytes": 23555,
+      "sha256": "81a9f258926fdda8d40219591941c409fd438c338a049c6b21f3c3c27024c249",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/33f2e24a2_WhatsAppImage2026-07-07at0907282.jpeg",
+      "sources": [
+        "base44/functions/generateHumanNaturePdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/b3905805be-9a0cd7386_IMG_0282.png",
+      "bytes": 205835,
+      "sha256": "28e18be14125ba4fdad57f6b19500118c2100809dff0ddab9b6d9805061ca540",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9a0cd7386_IMG_0282.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/d197aba8e6-f638bc053_WhatsAppImage2026-07-07at0907272.jpeg",
+      "bytes": 29145,
+      "sha256": "7c7f226dbf7a0f6688a6317572cb8f139754d46bda89503e841a83b10e42a6e2",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f638bc053_WhatsAppImage2026-07-07at0907272.jpeg",
+      "sources": [
+        "base44/functions/generateIntuitionPdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/5ea0f2aa0b-934de8803_WhatsAppImage2026-07-07at0907281.jpeg",
+      "bytes": 24852,
+      "sha256": "53172a868f3d366041bb65fe35f34d639fd8b554dc4fffe94b940d108424a69d",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/934de8803_WhatsAppImage2026-07-07at0907281.jpeg",
+      "sources": [
+        "base44/functions/generateLiminalStatePdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/ce77b31db4-a301517c6_WhatsAppImage2026-07-07at0907275.jpeg",
+      "bytes": 29785,
+      "sha256": "1d5b750dfae4765fa27a952517c0cacda80ef7912ffc4c981de4a2df7230d68c",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a301517c6_WhatsAppImage2026-07-07at0907275.jpeg",
+      "sources": [
+        "base44/functions/generateInnovationsPdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/767319aa66-bd2d0816a_WhatsAppImage2026-07-07at0907273.jpeg",
+      "bytes": 32099,
+      "sha256": "46a2cc711f460765ad403aa9db3070a46b7e4e00c6316042007bccdaab9d39c4",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/bd2d0816a_WhatsAppImage2026-07-07at0907273.jpeg",
+      "sources": [
+        "base44/functions/generateLowTimePreferencePdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/222bb461e0-72ed3784e_WhatsAppImage2026-07-07at0907284.jpeg",
+      "bytes": 24718,
+      "sha256": "28775e6a5cad3c4fad2535dc040a05cd899d451682ee7c20fb5268f77e628efe",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/72ed3784e_WhatsAppImage2026-07-07at0907284.jpeg",
+      "sources": [
+        "base44/functions/generateCognitiveDissonancePdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/507bc9ca9d-a0cb94b55_WhatsAppImage2026-07-07at090728.jpeg",
+      "bytes": 26054,
+      "sha256": "dd74c1c38bb465199f065b7e2b6900baf3613bc23d3027cbad69d9c748caa0cd",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/a0cb94b55_WhatsAppImage2026-07-07at090728.jpeg",
+      "sources": [
+        "base44/functions/generateMonetaryAbusePdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/826ec78048-487c529dd_WhatsAppImage2026-07-07at0907286.jpeg",
+      "bytes": 33031,
+      "sha256": "b6ae84ea808beb98975177398979f01e76c3cea3165278dfe1cd79448b0f52b4",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/487c529dd_WhatsAppImage2026-07-07at0907286.jpeg",
+      "sources": [
+        "base44/functions/generateMoneyPdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/43b70c01cd-74fdbfe4d_IMG_0288.png",
+      "bytes": 460087,
+      "sha256": "8e7e2ec67551ae1e5542431215a81dd554c2ce147affaf8924be102f53dff580",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/74fdbfe4d_IMG_0288.png",
+      "sources": [
+        "src/pages/SocialCard.jsx",
+        "src/pages/VideoEssays.jsx"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/3bdf49404f-09f1d867a_Untitleddesign3.png",
+      "bytes": 1538676,
+      "sha256": "9b7f1b197f0783722fa48cee168560808d166d00d94825b7afcd44d17ea7ea34",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/09f1d867a_Untitleddesign3.png?v=2",
+      "sources": [
+        "index.html"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/a5d0610b5f-1d29ab69b_logo.png",
+      "bytes": 1181714,
+      "sha256": "192866fbc2cefb60ba39dbddc5229471683ccec3e2108f3675a9030b9c829599",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/1d29ab69b_logo.png",
+      "sources": [
+        "Brand logo"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/a3f5ceeddc-92f95c703_WhatsAppImage2026-07-07at0907285.jpeg",
+      "bytes": 20955,
+      "sha256": "698e1246ea4a73891ac486f1132e280180d668c34461598ec0e65d89da699e2b",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/92f95c703_WhatsAppImage2026-07-07at0907285.jpeg",
+      "sources": [
+        "base44/functions/generateValuePdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "images/4c50ec4df4-99d79b49b_IMG_9185.png",
+      "bytes": 158398,
+      "sha256": "5e949ba2de14db9a95ad5ad06dbfdfd7e8c59842788f50d61d11b6f5baaeda3a",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/99d79b49b_IMG_9185.png",
+      "sources": [
+        "index.html"
+      ],
+      "contentType": "image/png"
+    },
+    {
+      "path": "images/a5414165a6-3433cc80b_WhatsAppImage2026-07-07at090727copy.jpeg",
+      "bytes": 51031,
+      "sha256": "952649798bc1fa794a4fa8606aa3bf0a3c083dc29b891072a2fb7bb14f0199d9",
+      "kind": "image",
+      "url": "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/3433cc80b_WhatsAppImage2026-07-07at090727copy.jpeg",
+      "sources": [
+        "base44/functions/generateConclusionPdf/entry.ts"
+      ],
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "icons/lucide/X.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "X",
+      "bytes": 231,
+      "sha256": "f3bc24503442adbf8cc60237248ee73e4c12db91a6e5adeacb93920f48bc990c"
+    },
+    {
+      "path": "icons/lucide/Copy.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Copy",
+      "bytes": 310,
+      "sha256": "5550961c84527c713d22fb242c4ce54032147c051d3a591aab06a66d7247670d"
+    },
+    {
+      "path": "icons/lucide/Check.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Check",
+      "bytes": 214,
+      "sha256": "dfe35d2f57f4de8509a7a8f0929c6b88d6325cd90d065536ae230a737a075c09"
+    },
+    {
+      "path": "icons/lucide/Zap.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Zap",
+      "bytes": 354,
+      "sha256": "32c2e939fb5e2db97cf1043ddea053e21ffb1148135bca85ccfe0e89b62bd951"
+    },
+    {
+      "path": "icons/lucide/Bitcoin.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Bitcoin",
+      "bytes": 427,
+      "sha256": "7a3173f0d1b9620cd7f56edb0fe9c7f9cf231b7ba0b5859edbb0ee1908f90f26"
+    },
+    {
+      "path": "icons/lucide/Droplet.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Droplet",
+      "bytes": 300,
+      "sha256": "53fff5cbde64ca3c50c2b4a17e9763296afbeb45db2be575bf2a5aeb1383985e"
+    },
+    {
+      "path": "icons/lucide/ChevronDown.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ChevronDown",
+      "bytes": 211,
+      "sha256": "da0896fb579f84d39ae475fe850fd66e81d81bffaeaa8eb761d9a5295369e72c"
+    },
+    {
+      "path": "icons/lucide/ExternalLink.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ExternalLink",
+      "bytes": 299,
+      "sha256": "9b2f8a81fad092a4f3b5b313ddc4866a9460cd07641bc31f8735d42f48f7f3c8"
+    },
+    {
+      "path": "icons/lucide/BookOpen.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "BookOpen",
+      "bytes": 349,
+      "sha256": "b89336e4c0bd984ac17eca5971bfa4b22ec8c4a32e170e31319ad5e1dc6f7f87"
+    },
+    {
+      "path": "icons/lucide/Boxes.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Boxes",
+      "bytes": 755,
+      "sha256": "b76f12dbbadaf732e98f02c8cea8c5ae853ec9c57c715d29220aaef247e42a60"
+    },
+    {
+      "path": "icons/lucide/Sparkles.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Sparkles",
+      "bytes": 527,
+      "sha256": "d6697aef46f2b8e967ee4321ae8d061a32af79c7a6e7b23b6967445935fa7f82"
+    },
+    {
+      "path": "icons/lucide/Newspaper.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Newspaper",
+      "bytes": 377,
+      "sha256": "d7dd1d6506427e5b6a770d5b397e1f5a2e2af0e586199acccb7a8cedc91e4147"
+    },
+    {
+      "path": "icons/lucide/Twitter.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Twitter",
+      "bytes": 334,
+      "sha256": "cb56d885c04a2f6c0418b6a4ba9f9140d6719a9f88b0368afec1c3fb3663420d"
+    },
+    {
+      "path": "icons/lucide/Mail.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Mail",
+      "bytes": 289,
+      "sha256": "99577e179e8231d28a095d6c1140719b9bb76b835cb98ad0bac1f79de3caafdb"
+    },
+    {
+      "path": "icons/lucide/Dices.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Dices",
+      "bytes": 411,
+      "sha256": "577eca0e87087c04ddef1003a09591dbde1b63655827a7b86783b4a5f3f2e51e"
+    },
+    {
+      "path": "icons/lucide/KeyRound.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "KeyRound",
+      "bytes": 424,
+      "sha256": "dcc3b982686423a240b2ca7db81dec99301d3b4cc8a5b5fcf8ad87fb1868b30d"
+    },
+    {
+      "path": "icons/lucide/Clapperboard.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Clapperboard",
+      "bytes": 378,
+      "sha256": "320f05568203992e45d871ea1c3419d9dd1c085a4a9784fdc9ae809cd3c2faf1"
+    },
+    {
+      "path": "icons/lucide/Instagram.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Instagram",
+      "bytes": 348,
+      "sha256": "6610ca29fd5e2f6e1efe494a3fe8ecd301182db3859c5e482134e839eef3654e"
+    },
+    {
+      "path": "icons/lucide/FileText.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "FileText",
+      "bytes": 351,
+      "sha256": "b675c939823eb7202b622eabcc3bf5ffa026c43a061a97a1d033036ca8aef859"
+    },
+    {
+      "path": "icons/lucide/Sun.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Sun",
+      "bytes": 428,
+      "sha256": "9d5b05538aefd3089d70d00e77b5b74626a8c2e4c75695c63e5503e7a5538b99"
+    },
+    {
+      "path": "icons/lucide/Moon.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Moon",
+      "bytes": 233,
+      "sha256": "1be65ae4b629451b4f183769e13a9c2e75983df88d8fadbc9a496749d14b3b96"
+    },
+    {
+      "path": "icons/lucide/Menu.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Menu",
+      "bytes": 299,
+      "sha256": "1886ff24d66c6cd0645f4155b03d4b3283d1d10c4b09fe5206b37086162ca5d0"
+    },
+    {
+      "path": "icons/lucide/MessageSquare.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "MessageSquare",
+      "bytes": 260,
+      "sha256": "6b348b2fb5661dd43e4cedc32c167a4b389809660037f91cf6351667967202d9"
+    },
+    {
+      "path": "icons/lucide/ArrowLeft.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ArrowLeft",
+      "bytes": 233,
+      "sha256": "73fee75dc5d60d8fec573f74051a1c94adf85d84bee6d909bb974e54622ef698"
+    },
+    {
+      "path": "icons/lucide/ArrowRight.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ArrowRight",
+      "bytes": 232,
+      "sha256": "0715c2038c5da08b63400a8882205b21598d75e8420134b7beaf46378170afb5"
+    },
+    {
+      "path": "icons/lucide/Compass.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Compass",
+      "bytes": 322,
+      "sha256": "fcb462ba4bd3058f4beff893abc2659565c21641f6650f05671d318d69a7e5e9"
+    },
+    {
+      "path": "icons/lucide/Search.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Search",
+      "bytes": 244,
+      "sha256": "cf257b4b4312159f7d2507db305e3656b0c82996cf17c4674ac0f7f4a47b880b"
+    },
+    {
+      "path": "icons/lucide/Link2.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Link2",
+      "bytes": 297,
+      "sha256": "6672a440879cadbd27354abe512abfd68b62ec3bd4a7145ec4e28811bf32d71c"
+    },
+    {
+      "path": "icons/lucide/Loader2.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Loader2",
+      "bytes": 226,
+      "sha256": "0a2045b10bc2fe7622e4574d0e6ea939251ceacc7b1ba5d58457d3d8001196ec"
+    },
+    {
+      "path": "icons/lucide/Upload.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Upload",
+      "bytes": 312,
+      "sha256": "ac2b2777471e1a45036569018b34be21181ab78a00096c3b7f7d3e31a37c818d"
+    },
+    {
+      "path": "icons/lucide/User.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "User",
+      "bytes": 270,
+      "sha256": "6345b5a1fbd3fca120d11d7e0b14723ebd06a5a75914e7142915ee0e6537cdd5"
+    },
+    {
+      "path": "icons/lucide/Bell.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Bell",
+      "bytes": 364,
+      "sha256": "f7d32e8111575f93351b48c4e1b954348489a3ac019db922b2b21c10bb7ad563"
+    },
+    {
+      "path": "icons/lucide/LogOut.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "LogOut",
+      "bytes": 313,
+      "sha256": "8108b04d4e24e5d863f58d94b12ee97e4b84ab81bec425c5e59adb372ddd9d19"
+    },
+    {
+      "path": "icons/lucide/Trash2.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Trash2",
+      "bytes": 379,
+      "sha256": "2ab4043a2bac4fd036afcebe2acf336929d0674d99c03d14c19ed45ddeccd774"
+    },
+    {
+      "path": "icons/lucide/Save.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Save",
+      "bytes": 384,
+      "sha256": "18e95aec0fe2e15693d92be492c8f5e71ad65389ebb0e44a10b2885033071555"
+    },
+    {
+      "path": "icons/lucide/Camera.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Camera",
+      "bytes": 320,
+      "sha256": "a3dff093d9d7d41b26f06464eede6a4754a64deb2f972993ec6bce118a47363b"
+    },
+    {
+      "path": "icons/lucide/AlertTriangle.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "AlertTriangle",
+      "bytes": 312,
+      "sha256": "d650642b23ba3011b65b3ee09a70733dcedb1f1af5e01fd7a30185a00fe0064d"
+    },
+    {
+      "path": "icons/lucide/Lightbulb.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Lightbulb",
+      "bytes": 338,
+      "sha256": "411bdd4951035ce9c82c0997c3b5edda53ab02c8fcad9043ac982fdb4a1e9426"
+    },
+    {
+      "path": "icons/lucide/Send.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Send",
+      "bytes": 364,
+      "sha256": "4dad085d052cb4289161a5813386075de40c6884e32e7a63c295ce407a1438c1"
+    },
+    {
+      "path": "icons/lucide/Gavel.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Gavel",
+      "bytes": 323,
+      "sha256": "26e741b3af180af22d9329878f06cfa1a54026cb3d7c03be115baa12dccc6f13"
+    },
+    {
+      "path": "icons/lucide/GitFork.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "GitFork",
+      "bytes": 349,
+      "sha256": "4e44924a8aa5aa7d3d4a9297c3757dc98d7b2c3af95f2d7d4ba51bed6b76bf67"
+    },
+    {
+      "path": "icons/lucide/ChevronRight.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ChevronRight",
+      "bytes": 212,
+      "sha256": "bea03bc32c2b3a67793f3ee8deba1a8b5790751abc82b3651832703da7627c05"
+    },
+    {
+      "path": "icons/lucide/ThumbsUp.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ThumbsUp",
+      "bytes": 371,
+      "sha256": "48a47cde05edb3acea968e8f82e09a9bfb6fd9b53e7fab839cdd835d2bccfa8a"
+    },
+    {
+      "path": "icons/lucide/ThumbsDown.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ThumbsDown",
+      "bytes": 370,
+      "sha256": "d71c1af5f67160407f86403c07a79a675f7c5ab05a57c489a06acca702065a7e"
+    },
+    {
+      "path": "icons/lucide/UserPlus.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "UserPlus",
+      "bytes": 346,
+      "sha256": "b5f73afc6a32d8416b7ebffeeec4499704da054994c572c987cd5fab3e72075c"
+    },
+    {
+      "path": "icons/lucide/LogIn.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "LogIn",
+      "bytes": 315,
+      "sha256": "8ccd8fcb2bd9203f459bfc04918f904f2076eb33fcad45c4083f183a4ef147a9"
+    },
+    {
+      "path": "icons/lucide/MessagesSquare.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "MessagesSquare",
+      "bytes": 319,
+      "sha256": "4974b935dc5246e1748f49b21a60e43f395b3a5511fc89fbaf875d459c2ee4d5"
+    },
+    {
+      "path": "icons/lucide/CheckCircle2.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "CheckCircle2",
+      "bytes": 244,
+      "sha256": "c19d5455890d8d067761853fd7eaafd3473d6ca32e95938fdf94ddc82f55e2b5"
+    },
+    {
+      "path": "icons/lucide/ArrowRightLeft.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ArrowRightLeft",
+      "bytes": 276,
+      "sha256": "cbe36a8ea96c3d6ba4a3d0b1ec3dbdc4557e1777e36be2f221f1aa9fb3700422"
+    },
+    {
+      "path": "icons/lucide/FlaskConical.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "FlaskConical",
+      "bytes": 350,
+      "sha256": "ba29584f86ff5a000fc77ce8fbce8756a535002055098e5f0b44aaa7eb94c0b0"
+    },
+    {
+      "path": "icons/lucide/RotateCcw.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "RotateCcw",
+      "bytes": 268,
+      "sha256": "584a5261544ffc8794eb2107e0873918bfd1a94854efed407cdf22a3074cb15b"
+    },
+    {
+      "path": "icons/lucide/Youtube.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Youtube",
+      "bytes": 399,
+      "sha256": "c8cab92ea109b87ef784c8bcb269d913d911af6aad4b779126a788a14e5bd77c"
+    },
+    {
+      "path": "icons/lucide/Droplets.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Droplets",
+      "bytes": 443,
+      "sha256": "19f87420b3a5140ea27dd1a9d975103943868852c9758a36fb97775ea0316cfc"
+    },
+    {
+      "path": "icons/lucide/GitPullRequest.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "GitPullRequest",
+      "bytes": 318,
+      "sha256": "cae4fa0d9122ced396b020f624c31d4c4f8273d433fe0be434e1b63084ba755c"
+    },
+    {
+      "path": "icons/lucide/FolderOpen.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "FolderOpen",
+      "bytes": 376,
+      "sha256": "3b3bec59a04bc68db3a7d685f3b96e0ab066ccfd6929c6afdee32f3d789e7487"
+    },
+    {
+      "path": "icons/lucide/Bot.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Bot",
+      "bytes": 335,
+      "sha256": "ff0eb4b69e969408ea7d612cf6c09733b5d30f38896efbae75511084643bb761"
+    },
+    {
+      "path": "icons/lucide/ShieldAlert.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ShieldAlert",
+      "bytes": 402,
+      "sha256": "11bcfd08e0ebdd974d111a839a461c7776737511b6a0100dcb8bc1fa7f60a794"
+    },
+    {
+      "path": "icons/lucide/Pause.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Pause",
+      "bytes": 284,
+      "sha256": "66275a2d201034601db440efeab3174adfe1254617debfa50e3dcad0926e4b50"
+    },
+    {
+      "path": "icons/lucide/Volume2.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Volume2",
+      "bytes": 443,
+      "sha256": "1561886025aab2bcad2ecd60a7ee4932f91bfd93e632c71f26f2375b5fd02582"
+    },
+    {
+      "path": "icons/lucide/VolumeX.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "VolumeX",
+      "bytes": 443,
+      "sha256": "cbc349d144094d7f31bf338f306ae15b55a9afd603fa157ddda2b89c29b2100c"
+    },
+    {
+      "path": "icons/lucide/Gamepad2.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Gamepad2",
+      "bytes": 639,
+      "sha256": "d6b4b82d8c9239e1589a5a6eb9eefd5f8bd6dd364bcf94f08e5642281dd259ed"
+    },
+    {
+      "path": "icons/lucide/Clock.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Clock",
+      "bytes": 256,
+      "sha256": "1c9bbf4c26cdb34f1eea393f6b151c2d962b7c252ce451ae58ae83621aeebcfc"
+    },
+    {
+      "path": "icons/lucide/AlertCircle.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "AlertCircle",
+      "bytes": 299,
+      "sha256": "37ae542cbce2f15fd32702a03fc52cf2fa3e08f8c6e56a1e254494f7680b7659"
+    },
+    {
+      "path": "icons/lucide/Printer.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Printer",
+      "bytes": 373,
+      "sha256": "0fd4acfefdab8b105e115ad7736b3267d8922456f7716c4d8edc95a042e5029b"
+    },
+    {
+      "path": "icons/lucide/Download.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Download",
+      "bytes": 315,
+      "sha256": "dc8f659848e216d6ad5c598a1394d575fdccda3f42100914dcf56e6e281ff9a3"
+    },
+    {
+      "path": "icons/lucide/Lock.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Lock",
+      "bytes": 280,
+      "sha256": "1508bb278962fc11bce6c3ba7321c69f15f29cae882bacc758e716e5e7c98c71"
+    },
+    {
+      "path": "icons/lucide/ArrowUp.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ArrowUp",
+      "bytes": 232,
+      "sha256": "886f784f747baa9072a008fa774a157c667524f8866872d6edde79d672aeb012"
+    },
+    {
+      "path": "icons/lucide/MoreHorizontal.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "MoreHorizontal",
+      "bytes": 279,
+      "sha256": "5044256f6c9ad7066e96b21c54ec8531b6666e919797bfef1e9cb42f30dd9fa9"
+    },
+    {
+      "path": "icons/lucide/ChevronLeft.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ChevronLeft",
+      "bytes": 213,
+      "sha256": "a1dcfb220236b8f4e14e769bf68671417668e25233f1983057f266b2663fd3ac"
+    },
+    {
+      "path": "icons/lucide/Circle.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Circle",
+      "bytes": 219,
+      "sha256": "8d4932d902c2a59c7ab573d727059cd7da329a25a50a993d6f169d3cb3ef0dff"
+    },
+    {
+      "path": "icons/lucide/Minus.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Minus",
+      "bytes": 207,
+      "sha256": "02fbc96faf1a9cc34383d4ec82a54a2b1de5a05a98eb6222e65b22b7a01ff460"
+    },
+    {
+      "path": "icons/lucide/GripVertical.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "GripVertical",
+      "bytes": 368,
+      "sha256": "a155fc56bc5770981af4457f6da37371c4c83a75e059c8f97624ab71acc85268"
+    },
+    {
+      "path": "icons/lucide/ChevronUp.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ChevronUp",
+      "bytes": 213,
+      "sha256": "43f1b0c5762bd902568918cac85a755512693c56e25f19371398a65a8f889a01"
+    },
+    {
+      "path": "icons/lucide/PanelLeft.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "PanelLeft",
+      "bytes": 255,
+      "sha256": "93fbfa6b66e42dcc86a2ce9c3aae80c0f2bffd5c5876269553a8504eda1c04c3"
+    },
+    {
+      "path": "icons/lucide/Play.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Play",
+      "bytes": 225,
+      "sha256": "20f770e0aa2f9e6e65ce4363af46f5cf4f4f0a9402d722567dad7f8cfba73354"
+    },
+    {
+      "path": "icons/lucide/Activity.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Activity",
+      "bytes": 321,
+      "sha256": "60934d5602fb4b59da6a591e548c34eee57354c57d5fb80929c66108eac81b78"
+    },
+    {
+      "path": "icons/lucide/Flame.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Flame",
+      "bytes": 368,
+      "sha256": "b4613d72184dfb99ce1c99b49e11e5991fa5faf45f16e5d2f22afdcea3a05d1e"
+    },
+    {
+      "path": "icons/lucide/CheckCircle.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "CheckCircle",
+      "bytes": 256,
+      "sha256": "a29cbe39d869537a1e03fd1e93ce8c62bb6c361decef7be04ed53d106f92fa9c"
+    },
+    {
+      "path": "icons/lucide/ShieldCheck.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "ShieldCheck",
+      "bytes": 386,
+      "sha256": "313412a47126871d9cc4422359057fff124f641f9e7f20c03cc7835597532a30"
+    },
+    {
+      "path": "icons/lucide/LayoutGrid.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "LayoutGrid",
+      "bytes": 379,
+      "sha256": "1948bea44e80425f2e1469c2a1cdfda1681593a89611c3fc7d2aa06db67a7c58"
+    },
+    {
+      "path": "icons/lucide/Columns3.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Columns3",
+      "bytes": 275,
+      "sha256": "d0efeb341c1f1604586f991b3aae21fd999ca6670d4b92b77f17f70a9167f112"
+    },
+    {
+      "path": "icons/lucide/Type.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "Type",
+      "bytes": 301,
+      "sha256": "7d5350b70972f5d5848fffdb11d6b2f2a90067304521b999b1cb1c00a650cdb2"
+    },
+    {
+      "path": "icons/lucide/LayoutDashboard.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "LayoutDashboard",
+      "bytes": 379,
+      "sha256": "310563ca6f73e5bb1bfd640d65973cce25ad5e03a2cbaee83bd697ca50a0bb70"
+    },
+    {
+      "path": "icons/lucide/BadgeCheck.svg",
+      "kind": "icon",
+      "source": "lucide-react",
+      "name": "BadgeCheck",
+      "bytes": 383,
+      "sha256": "98654efaf1533d9700d9bbc2a67bb20c3642c73eb0bea1376d5853600e8b6536"
+    }
+  ],
+  "failed": [
+    {
+      "url": "https://pbs.twimg.com/profile_images/2085837854291226625/P20BQW-E_400x400.jpg",
+      "sources": [
+        "src/pages/Resources.jsx"
+      ],
+      "error": "HTTP 404"
+    }
+  ],
+  "unresolved": []
+}
