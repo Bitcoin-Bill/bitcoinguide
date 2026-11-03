@@ -4,7 +4,7 @@ import { BookOpen } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-28 pb-4 md:pt-36 md:pb-6">
+    <section className="relative pt-36 pb-4 md:pt-36 md:pb-6">
       <div className="absolute left-6 lg:left-12 top-0 bottom-0 w-px bg-border hidden md:block" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12">

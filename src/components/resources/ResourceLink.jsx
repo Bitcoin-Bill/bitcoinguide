@@ -17,7 +17,7 @@ function getLinkType(url) {
   return "Website";
 }
 
-export default function ResourceLink({ link, index }) {
+export default function ResourceLink({ link, index, noLink = false }) {
   const { theme } = useTheme();
   const [expanded, setExpanded] = useState(false);
   const linkType = getLinkType(link.url);
@@ -67,16 +67,18 @@ export default function ResourceLink({ link, index }) {
                 <p className="font-body text-sm text-lead leading-relaxed mt-2">
                   {link.description}
                 </p>
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-1.5 mt-3 font-mono text-[10px] tracking-widest uppercase text-lead border border-border px-3 py-1.5 hover:bg-[var(--page-accent)] hover:text-parchment hover:border-[var(--page-accent)] transition-colors duration-300"
-                >
-                  Open Link
-                  <ExternalLink size={12} />
-                </a>
+                {!noLink && (
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 mt-3 font-mono text-[10px] tracking-widest uppercase text-lead border border-border px-3 py-1.5 hover:bg-[var(--page-accent)] hover:text-parchment hover:border-[var(--page-accent)] transition-colors duration-300"
+                  >
+                    Open Link
+                    <ExternalLink size={12} />
+                  </a>
+                )}
               </motion.div>
             )}
           </AnimatePresence>

@@ -1,8 +1,8 @@
 import React from "react";
 import { BookOpen, Boxes, Sparkles, Newspaper, Twitter, Mail, Dices, KeyRound, Clapperboard, Instagram } from "lucide-react";
+import OogaPalmTreeIcon from "@/components/OogaPalmTreeIcon";
 import { Link } from "react-router-dom";
-import DonateButton from "@/components/DonateButton";
-import StrikeTip from "@/components/StrikeTip";
+import BeerTip from "@/components/BeerTip";
 import { Image } from "@/components/ui/image";
 import { useTheme } from "@/components/ThemeProvider";
 import { ENTROPYLAB_URL, ENTROPYLAB_THUMB_LIGHT, ENTROPYLAB_THUMB_DARK } from "@/components/EntropyLabLink";
@@ -39,6 +39,12 @@ export default function FooterSection() {
               <Sparkles className="text-[#EC4899]" size={18} strokeWidth={1.4} />
             </Link>
             <span className="font-mono text-xs text-lead/40 select-none" aria-hidden="true">/</span>
+            <Link to="/oogabooga-land" aria-label="Ooga Booga Land — make your own caveman" className="group relative flex items-center justify-center h-6 w-6 md:h-7 md:w-7 hover:opacity-70 transition-opacity duration-300">
+              <OogaPalmTreeIcon className="w-[18px] h-[18px] shrink-0" />
+              <span className="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-ink px-2 py-1 font-mono text-[9px] tracking-[0.15em] uppercase text-parchment opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                Ooga Booga Land · make a caveman
+              </span>
+            </Link>
             <a
               href={ENTROPYLAB_URL}
               target="_blank"
@@ -57,12 +63,8 @@ export default function FooterSection() {
             </a>
           </div>
 
-          <div className="flex items-center justify-center gap-3 flex-wrap md:flex-1 md:justify-center">
-            <DonateButton />
-            <StrikeTip />
-          </div>
-
           <div className="flex items-center gap-3 md:flex-1 md:justify-end shrink-0">
+            <BeerTip />
             <a
               href="https://x.com/bitcoinguideapp"
               target="_blank"

@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
-import { ArrowUp, Boxes } from "lucide-react";
-import ResourceLink from "@/components/resources/ResourceLink";
-import ReadingListLink from "@/components/resources/ReadingListLink";
+import { Boxes } from "lucide-react";
+import ResourceSectionBubble from "@/components/resources/ResourceSectionBubble";
 import ResourceSectionNav from "@/components/resources/ResourceSectionNav";
+
+const SECTION_COLORS = [
+  "#FF8C00", // orange — Introduction
+  "#009DFF", // blue — Where to Buy
+  "#16A34A", // green — Hardware Wallets
+  "#8B5CF6", // purple — Software Wallets
+  "#EC4899", // pink — Self-Custody & Multisig
+  "#FACC15", // yellow — Run a Node
+  "#0EA5E9", // sky — Mining & Energy
+  "#F97316", // copper-orange — Earn & Spend
+  "#14B8A6", // teal — Education & Media
+  "#EF4444", // red — Communities
+  "#A855F7", // violet — Tools & Calculators
+  "#6366F1", // indigo — Books & Literature
+];
+
+function slugify(s) {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
 
 
 export const sections = [
@@ -133,11 +151,97 @@ export const sections = [
         thumbnail: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/84eefe023_Screenshot2026-07-29at103524PM.png",
         description: "A collection of interactive Bitcoin dashboards from Wicked — track Bitcoin net worth, quantum exposure, DCA cost basis, issuance rate, Bitcoin dominance, node count, and more. Live block height, supply, hashrate, and difficulty data with timezone-aware charts.",
       },
+      {
+        title: "Pleb Command Center — Bitcoin Toolkit",
+        url: "https://www.plebcc.com/",
+        thumbnail: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9124cc561_generated_image.png",
+        fit: "contain",
+        description: "A no-KYC Bitcoin toolkit hub — all the pleb tools in one place. Aggregates StackFreedom (personal stacking roadmap), SatChek (future value of today's expenses), BTC Loan Calc (sell vs. borrow), Sovereign Scorecard (self-custody quiz), SatConvert (sats/BTC/fiat), Satoshi Machine (inflation vs. Bitcoin), Halvening (halving countdown), and StackSim (DCA supply modeling). Created by @aastack.",
+      },
+    ],
+  },
+  {
+    title: "Build Your Own Air-Gapped Wallet",
+    subtitle: "Repurpose an older Lenovo ThinkPad into a dedicated, permanently offline Bitcoin signer — the guide, operating systems, and reference videos to do it yourself.",
+    links: [
+      {
+        title: "Air-Gapped ThinkPad — Offline Signer Guide (PDF)",
+        url: "https://base44.app/api/apps/6a4d10bcc776843a6d26b955/files/mp/public/6a4d10bcc776843a6d26b955/5120fc432_Air-Gapped-ThinkPad-Guide.pdf",
+        thumbnail: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/60845842c_IMG_9992.jpeg",
+        fit: "contain",
+        description: "A complete step-by-step guide to repurposing an older Lenovo ThinkPad into a dedicated, permanently offline Bitcoin signer. Covers physically removing the Wi-Fi and Bluetooth cards, locking down the BIOS, installing Tails or a minimal Debian distribution, running Sparrow or Electrum entirely offline, and signing transactions over an air gap using QR codes or a microSD card. Open it in your browser or download it for reference.",
+      },
+      {
+        title: "Tails — Portable Amnesic Operating System",
+        url: "https://tails.net/",
+        description: "A portable, amnesic OS that runs entirely from a USB stick and leaves no trace on the computer. Every boot starts clean and nothing is saved unless you explicitly configure encrypted persistent storage — the simplest way to guarantee your offline signing environment is fresh and malware-free each session. Download the image and verify its signature before flashing.",
+      },
+      {
+        title: "Debian — The Universal Operating System",
+        url: "https://www.debian.org/",
+        description: "A free, open-source Linux distribution ideal for a minimal, persistent air-gapped signer. Install it with no desktop (or a minimal one), enable full-disk encryption (LUKS), and never connect the machine to a network after install. Transfer Sparrow or Electrum installers in via USB and verify their GPG signatures offline.",
+      },
+      {
+        title: "How To Replace the Wi-Fi / Bluetooth Card — ThinkPad T460s",
+        url: "https://www.youtube.com/watch?v=672t4g6kIJA",
+        thumbnail: "https://img.youtube.com/vi/672t4g6kIJA/hqdefault.jpg",
+        description: "A clear video walkthrough showing how to safely access and remove the Wi-Fi / Bluetooth card on a Lenovo ThinkPad T460s ultrabook. Use it as a reference for the physical wireless-removal step in the air-gapped guide — the same approach applies to most ThinkPad models with an accessible bottom panel.",
+      },
+      {
+        title: "ThinkPad X230 Wi-Fi Card Replacement Repair",
+        url: "https://www.youtube.com/watch?v=78m9nDKnsoI",
+        thumbnail: "https://img.youtube.com/vi/78m9nDKnsoI/hqdefault.jpg",
+        description: "A full disassembly and Wi-Fi card replacement guide for the Lenovo ThinkPad X230 — one of the most popular cheap, second-hand models for air-gapped builds. Covers opening the chassis, disconnecting the antenna leads, and removing the wireless card so the laptop can never reach a network.",
+      },
+      {
+        title: "Best Buy — Refurbished ThinkPad Laptops",
+        url: "https://www.bestbuy.com/site/searchpage.jsp?st=thinkpad+refurbished",
+        description: "Best Buy sells refurbished Lenovo ThinkPads — an affordable source of the older, easy-to-open models (T and X series) that make ideal air-gapped signers. Browse the refurbished selection, check the condition rating and return policy, and pick a model with a removable bottom panel and accessible Wi-Fi card.",
+      },
+    ],
+  },
+  {
+    title: "Yeti 2.0 — Full 3-of-7 Multisig Setup",
+    subtitle: "A complete, start-to-finish guide to building a full archival Bitcoin Core node, a 3-of-7 multisig vault, full wallet and key backups, and an air-gapped signing workflow — based directly on Bitcoin Core's official multisig and offline-signing tutorials.",
+    links: [
+      {
+        title: "Yeti 2.0 — GitHub Repository",
+        url: "https://github.com/bowlarbear/yeti-2.0",
+        thumbnail: "https://opengraph.githubassets.com/1/bowlarbear/yeti-2.0",
+        fit: "contain",
+        description: "The full Yeti 2.0 guide — an open-source, start-to-finish procedure that turns Bitcoin Core's official multisig and offline-signing docs into one cohesive workflow: a full archival node, a 3-of-7 multisig vault, complete wallet and key backups, and an air-gapped signing setup. The scripts intentionally mirror Bitcoin Core's official tutorials so you can verify every command against the source. Read START_HERE.md first, then follow the README.",
+      },
+      {
+        title: "Start Here — Yeti 2.0",
+        url: "https://github.com/bowlarbear/yeti-2.0/blob/main/START_HERE.md",
+        description: "The recommended entry point for the Yeti 2.0 guide — a short orientation that tells you what you're building, what hardware and software you'll need, and the order to follow the rest of the documents. Read this before diving into the README.",
+      },
+      {
+        title: "README — Full Setup Walkthrough",
+        url: "https://github.com/bowlarbear/yeti-2.0/blob/main/README.md",
+        description: "The main Yeti 2.0 walkthrough — setting up a full archival Bitcoin Core node, configuring a 3-of-7 multisig vault, creating complete wallet and key backups, and establishing an air-gapped signing workflow using Bitcoin Core's official multisig and offline-signing tutorials as the reference. Includes subguides for keeping Ubuntu bootable USB software up to date and updating Bitcoin Core on the full node.",
+      },
+      {
+        title: "FAQ — Design Decisions",
+        url: "https://github.com/bowlarbear/yeti-2.0/blob/main/FAQ.md",
+        description: "The Yeti 2.0 FAQ — answers the most common questions about the guide's design choices, why 3-of-7 multisig, why a full archival node, and the reasoning behind the air-gapped signing workflow.",
+      },
+      {
+        title: "Threat Model — Yeti 2.0",
+        url: "https://github.com/bowlarbear/yeti-2.0/blob/main/THREAT_MODEL.md",
+        description: "The threat model behind Yeti 2.0 — the adversaries and attack surfaces the guide is designed to defend against, and the assumptions it makes about your operational security. Read this to understand what the setup protects you from and what it doesn't.",
+      },
+      {
+        title: "Verify PSBT — Yeti 2.0",
+        url: "https://github.com/bowlarbear/yeti-2.0/blob/main/verify_psbt.md",
+        description: "A subguide for verifying Partially Signed Bitcoin Transactions (PSBTs) on the air-gapped machine before signing — a critical step to confirm the transaction is exactly what you intend before any key ever touches it.",
+      },
     ],
   },
   {
     title: "Cold Storage & Hardware Wallets",
-    subtitle: "Take control of your keys with self-custody tools. Start here if you're new to holding your own keys.",
+    subtitle: "Ticking time bombs. Every one of these devices is a single point of failure waiting to go off — proceed with extreme caution before trusting one with your keys.",
+    disableUrls: true,
     links: [
       {
         title: "Blockstream Jade — Hardware Wallet",
@@ -193,46 +297,6 @@ export const sections = [
         thumbnail: "https://storage.googleapis.com/cdn-foundation/website3/images/sections/buybox/gallery-2.jpg",
         fit: "contain",
         description: "Foundation's Passport Prime — the world's first 'Human Authority Hardware,' an open-source device that moves your digital authority onto dedicated, secure hardware. Beyond Bitcoin self-custody keys, it secures 2FA codes, hardware security keys (NFC/USB), and 50GB of encrypted file storage. Runs KeyOS, a Rust microkernel with sandboxed, isolated apps, and pairs with the Envoy mobile app (iOS, Android, and F-Droid) over encrypted QuantumLink Bluetooth. Independently audited and assembled in the USA.",
-      },
-    ],
-  },
-  {
-    title: "Build Your Own Air-Gapped Wallet",
-    subtitle: "Repurpose an older Lenovo ThinkPad into a dedicated, permanently offline Bitcoin signer — the guide, operating systems, and reference videos to do it yourself.",
-    links: [
-      {
-        title: "Air-Gapped ThinkPad — Offline Signer Guide (PDF)",
-        url: "https://base44.app/api/apps/6a4d10bcc776843a6d26b955/files/mp/public/6a4d10bcc776843a6d26b955/5120fc432_Air-Gapped-ThinkPad-Guide.pdf",
-        thumbnail: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/60845842c_IMG_9992.jpeg",
-        fit: "contain",
-        description: "A complete step-by-step guide to repurposing an older Lenovo ThinkPad into a dedicated, permanently offline Bitcoin signer. Covers physically removing the Wi-Fi and Bluetooth cards, locking down the BIOS, installing Tails or a minimal Debian distribution, running Sparrow or Electrum entirely offline, and signing transactions over an air gap using QR codes or a microSD card. Open it in your browser or download it for reference.",
-      },
-      {
-        title: "Tails — Portable Amnesic Operating System",
-        url: "https://tails.net/",
-        description: "A portable, amnesic OS that runs entirely from a USB stick and leaves no trace on the computer. Every boot starts clean and nothing is saved unless you explicitly configure encrypted persistent storage — the simplest way to guarantee your offline signing environment is fresh and malware-free each session. Download the image and verify its signature before flashing.",
-      },
-      {
-        title: "Debian — The Universal Operating System",
-        url: "https://www.debian.org/",
-        description: "A free, open-source Linux distribution ideal for a minimal, persistent air-gapped signer. Install it with no desktop (or a minimal one), enable full-disk encryption (LUKS), and never connect the machine to a network after install. Transfer Sparrow or Electrum installers in via USB and verify their GPG signatures offline.",
-      },
-      {
-        title: "How To Replace the Wi-Fi / Bluetooth Card — ThinkPad T460s",
-        url: "https://www.youtube.com/watch?v=672t4g6kIJA",
-        thumbnail: "https://img.youtube.com/vi/672t4g6kIJA/hqdefault.jpg",
-        description: "A clear video walkthrough showing how to safely access and remove the Wi-Fi / Bluetooth card on a Lenovo ThinkPad T460s ultrabook. Use it as a reference for the physical wireless-removal step in the air-gapped guide — the same approach applies to most ThinkPad models with an accessible bottom panel.",
-      },
-      {
-        title: "ThinkPad X230 Wi-Fi Card Replacement Repair",
-        url: "https://www.youtube.com/watch?v=78m9nDKnsoI",
-        thumbnail: "https://img.youtube.com/vi/78m9nDKnsoI/hqdefault.jpg",
-        description: "A full disassembly and Wi-Fi card replacement guide for the Lenovo ThinkPad X230 — one of the most popular cheap, second-hand models for air-gapped builds. Covers opening the chassis, disconnecting the antenna leads, and removing the wireless card so the laptop can never reach a network.",
-      },
-      {
-        title: "Best Buy — Refurbished ThinkPad Laptops",
-        url: "https://www.bestbuy.com/site/searchpage.jsp?st=thinkpad+refurbished",
-        description: "Best Buy sells refurbished Lenovo ThinkPads — an affordable source of the older, easy-to-open models (T and X series) that make ideal air-gapped signers. Browse the refurbished selection, check the condition rating and return policy, and pick a model with a removable bottom panel and accessible Wi-Fi card.",
       },
     ],
   },
@@ -387,6 +451,13 @@ export const sections = [
         fit: "contain",
         description: "A sovereign personal server platform — StartOS is a free, open-source operating system that lets you run your own Bitcoin node, Lightning, Electrum server, and dozens of self-hosted services from a single dashboard. Install on your own hardware or buy a pre-built Start9 server. Fully self-sovereign: your data and keys never leave your home.",
       },
+      {
+        title: "Yeti 2.0 — Full Archival Bitcoin Core Node Guide",
+        url: "https://github.com/bowlarbear/yeti-2.0",
+        thumbnail: "https://opengraph.githubassets.com/1/bowlarbear/yeti-2.0",
+        fit: "contain",
+        description: "An open-source, start-to-finish guide to running a full archival Bitcoin Core node — part of a complete 3-of-7 multisig vault and air-gapped signing workflow built directly on Bitcoin Core's official multisig and offline-signing tutorials. Verify every command against Bitcoin Core's own docs. Read START_HERE.md first, then follow the README.",
+      },
     ],
   },
   {
@@ -531,6 +602,103 @@ export const sections = [
     ],
   },
   {
+    title: "Bitcoin X Accounts",
+    subtitle: "People worth following on X (Twitter) for Bitcoin commentary, analysis, and culture.",
+    links: [
+      {
+        title: "Bitcoin Isn't About You (@brian_trollz)",
+        url: "https://x.com/brian_trollz",
+        thumbnail: "https://pbs.twimg.com/profile_images/2085837854291226625/P20BQW-E_400x400.jpg",
+        fit: "contain",
+        description: "Technical & Opinion Editor at Bitcoin Magazine. Sharp, irreverent Bitcoin commentary and cultural observations from a consistently original voice.",
+      },
+      {
+        title: "Wicked (@w_s_bitcoin)",
+        url: "https://x.com/w_s_bitcoin",
+        thumbnail: "https://pbs.twimg.com/profile_images/1653379213947203586/5QAJUNt4_400x400.jpg",
+        fit: "contain",
+        description: "Bitcoiner, programmer, and EntropyLab collaborator. Art, math, and self-custody advocacy — 'exit fiat, save in bitcoin, and take it into self custody.'",
+      },
+      {
+        title: "Mr.Hodl (@MrHodl)",
+        url: "https://x.com/mrhodl",
+        thumbnail: "https://pbs.twimg.com/profile_images/2091519971285258240/0Jf9AKM2_400x400.jpg",
+        fit: "contain",
+        description: "Bitcoin Ooga Booga. Creator of EntropyLab and a driving force in the air-gapped, open-source Bitcoin tooling community.",
+      },
+      {
+        title: "Ron Sovereignty Swanson (@RonSwanonson)",
+        url: "https://x.com/ronswanonson",
+        thumbnail: "https://pbs.twimg.com/profile_images/1841551833548128256/VT2U7EOf_400x400.jpg",
+        fit: "contain",
+        description: "Sovereignty- and abundance-focused Bitcoin educator. Makes the case for hard money, self-custody, and the freedom Bitcoin enables.",
+      },
+      {
+        title: "Breadman (@BTCBreadMan)",
+        url: "https://x.com/btcbreadman",
+        thumbnail: "https://pbs.twimg.com/profile_images/1582399006986076160/wDxvuHr__400x400.jpg",
+        fit: "contain",
+        description: "Bitcoin shitposter and sharp-tongued commentator on corporate Bitcoin treasuries, Strategy/MSTR, and market narratives. Not financial advice.",
+      },
+      {
+        title: "Saifedean Ammous (@saifedean)",
+        url: "https://x.com/saifedean",
+        thumbnail: "https://pbs.twimg.com/profile_images/1867105282712592384/7YDcrAhI_400x400.jpg",
+        fit: "contain",
+        description: "Author of The Bitcoin Standard, The Fiat Standard, The Gold Standard, and Principles of Economics. Economist and leading voice for sound money.",
+      },
+      {
+        title: "dr. calle (@callebtc)",
+        url: "https://x.com/callebtc",
+        thumbnail: "https://pbs.twimg.com/profile_images/1719881482070540288/bZIoBxFq_400x400.jpg",
+        fit: "contain",
+        description: "Physicist and Lightning Network developer. Creator of LNbits and a key figure in open-source Bitcoin and Lightning infrastructure.",
+      },
+      {
+        title: "Magoo PhD (@HodlMagoo)",
+        url: "https://x.com/hodlmagoo",
+        thumbnail: "https://pbs.twimg.com/profile_images/1676478706187894787/WkWihAzJ_400x400.jpg",
+        fit: "contain",
+        description: "Bitcoin macro analyst, best-selling author, and conference speaker. Covers macroeconomics, market cycles, and the path to a Bitcoin standard.",
+      },
+      {
+        title: "Dr. Ammous (@AmmousMD)",
+        url: "https://x.com/ammousmd",
+        thumbnail: "https://pbs.twimg.com/profile_images/1878893775835045888/NUUvFjdP_400x400.jpg",
+        fit: "contain",
+        description: "Reformed medical doctor turned health-and-Bitcoin advocate. Getting you healthy without pills, grounded in sound-money principles. Not medical advice.",
+      },
+      {
+        title: "Ben Justman (@BenJustman)",
+        url: "https://x.com/benjustman",
+        thumbnail: "https://pbs.twimg.com/profile_images/1644914021844529152/QseBwxH-_400x400.jpg",
+        fit: "contain",
+        description: "Owner and winemaker at Peony Lane Wine. Low-intervention wine from North America's highest-elevation wine region — Bitcoin preferred.",
+      },
+      {
+        title: "D++ (@D_plus__plus)",
+        url: "https://x.com/d_plus__plus",
+        thumbnail: "https://pbs.twimg.com/profile_images/2084171247617990656/rNqSrIG9_400x400.jpg",
+        fit: "contain",
+        description: "Bitcoin professor, software engineer, and revolutionary cypherpunk. Dice-roll cryptography nerdsniping and sharp technical commentary.",
+      },
+      {
+        title: "Kristen (@2dogs1chic)",
+        url: "https://x.com/2dogs1chic",
+        thumbnail: "https://pbs.twimg.com/profile_images/2084076785969381376/8h_z4Dcd.jpg",
+        fit: "contain",
+        description: "Capital investor using Bitcoin as collateral to build wealth. MBA sharing transparent financial education, sound money advocacy, and clear breakdowns of digital asset classes — 'There is no other Bitcoin.'",
+      },
+      {
+        title: "AA Stack (@aastack)",
+        url: "https://x.com/aastack",
+        thumbnail: "https://pbs.twimg.com/profile_images/2058252912191475712/l7t-ovHg.jpg",
+        fit: "contain",
+        description: "Retired at 39, family-first Bitcoin freedom maxi. Shares Bitcoin tools, commentary, and freedom-focused content on X.",
+      },
+    ],
+  },
+  {
     title: "Spend & Earn Bitcoin",
     subtitle: "Bitcoin rewards, payments, and the circular economy.",
     links: [
@@ -668,11 +836,34 @@ export const sections = [
 ];
 
 export default function Resources() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const scrollToSection = (title, delay = 0) => {
+    setTimeout(() => {
+      const el = document.getElementById(slugify(title));
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, delay);
+  };
+
+  const handleToggle = (idx) => {
+    const willOpen = openIndex !== idx;
+    setOpenIndex(willOpen ? idx : null);
+    if (willOpen) scrollToSection(sections[idx].title, 340);
+  };
+
+  const handleJump = (title) => {
+    const idx = sections.findIndex((s) => s.title === title);
+    if (idx === -1) return;
+    const isOpen = openIndex === idx;
+    setOpenIndex(idx);
+    scrollToSection(title, isOpen ? 0 : 340);
+  };
+
   return (
     <div className="min-h-screen bg-parchment">
       <Navbar />
 
-      <section className="relative pt-28 pb-2 md:pt-36 md:pb-4">
+      <section className="relative pt-36 pb-2 md:pt-36 md:pb-4">
         <div className="absolute left-6 lg:left-12 top-0 bottom-0 w-px bg-border hidden md:block" />
 
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
@@ -694,41 +885,20 @@ export default function Resources() {
 
         <div className="max-w-5xl mx-auto px-6 lg:px-12">
           <div className="sticky top-[100px] md:top-16 z-40 mb-8 md:mb-10 -mx-6 lg:-mx-12 px-6 lg:px-12 py-3 bg-parchment/95 backdrop-blur-sm border-b border-border/60">
-            <ResourceSectionNav sections={sections} />
+            <ResourceSectionNav sections={sections} onJump={handleJump} />
           </div>
 
-          {sections.map((section, si) => (
-            <div key={si} id={section.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")} className="mb-10 md:mb-14 scroll-mt-40">
-              <div className="flex items-center gap-2 mb-2">
-                <p className="font-mono text-xs tracking-[0.3em] uppercase text-lead">
-                  {section.title}
-                </p>
-                <button
-                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                  aria-label="Return to top"
-                  className="flex items-center justify-center h-5 w-5 rounded-sm text-[#FF8C00] hover:text-[#FFA940] transition-colors duration-300 shrink-0"
-                >
-                  <ArrowUp size={14} />
-                </button>
-              </div>
-              <p className="font-body text-sm text-lead/80 mb-6 max-w-xl">
-                {section.subtitle}
-              </p>
-
-              <div className="flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:gap-x-12">
-                {section.links.length > 0 ? (
-                  section.links.map((link, li) => (
-                    <ResourceLink key={li} link={link} />
-                  ))
-                ) : (
-                  <p className="font-mono text-xs text-lead/30 italic border border-dashed border-border p-5">
-                    Coming soon
-                  </p>
-                )}
-                {section.title === "Books & Literature" && <ReadingListLink />}
-              </div>
-            </div>
-          ))}
+          <div className="flex flex-col gap-4">
+            {sections.map((section, si) => (
+              <ResourceSectionBubble
+                key={si}
+                section={section}
+                color={SECTION_COLORS[si % SECTION_COLORS.length]}
+                expanded={openIndex === si}
+                onToggle={() => handleToggle(si)}
+              />
+            ))}
+          </div>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FileText, ExternalLink, X } from "lucide-react";
@@ -211,57 +212,60 @@ export default function LiteratureCard({ item, index }) {
       </motion.div>
 
       {/* Quick View Modal */}
-      <AnimatePresence>
-        {quickViewOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/60 backdrop-blur-sm p-4 md:p-8"
-            onClick={() => setQuickViewOpen(false)}
-          >
+      {createPortal(
+        <AnimatePresence>
+          {quickViewOpen && (
             <motion.div
-              initial={{ scale: 0.95, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.95, opacity: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="bg-parchment w-full max-w-4xl h-[80vh] md:h-[85vh] rounded-sm shadow-2xl overflow-hidden flex flex-col"
-              onClick={(e) => e.stopPropagation()}
+              className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/60 backdrop-blur-sm p-4 md:p-8"
+              onClick={() => setQuickViewOpen(false)}
             >
-              <div className="flex items-center justify-between px-6 py-4 border-b border-border">
-                <div className="flex items-center gap-3">
-                  {item.icon && (
-                    <img src={item.icon} alt="" className="w-8 h-8 object-contain" />
-                  )}
-                  <h4 className="font-heading text-lg text-ink">{quickViewTitle}</h4>
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="bg-parchment w-full max-w-4xl h-[85vh] rounded-sm shadow-2xl overflow-hidden flex flex-col"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="flex items-center justify-between px-4 md:px-6 py-3 md:py-4 border-b border-border">
+                  <div className="flex items-center gap-3 min-w-0">
+                    {item.icon && (
+                      <img src={item.icon} alt="" className="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0" />
+                    )}
+                    <h4 className="font-heading text-base md:text-lg text-ink truncate">{quickViewTitle}</h4>
+                  </div>
+                  <div className="flex items-center gap-3 shrink-0">
+                    <a
+                      href={quickViewUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-[10px] tracking-widest uppercase text-lead hover:text-[var(--page-accent)] transition-colors duration-300"
+                    >
+                      Open Full
+                    </a>
+                    <button
+                      onClick={() => setQuickViewOpen(false)}
+                      className="text-lead hover:text-ink transition-colors duration-300"
+                    >
+                      <X size={18} />
+                    </button>
+                  </div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <a
-                    href={quickViewUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-[10px] tracking-widest uppercase text-lead hover:text-[var(--page-accent)] transition-colors duration-300"
-                  >
-                    Open Full
-                  </a>
-                  <button
-                    onClick={() => setQuickViewOpen(false)}
-                    className="text-lead hover:text-ink transition-colors duration-300"
-                  >
-                    <X size={18} />
-                  </button>
-                </div>
-              </div>
-              <iframe
-                src={quickViewUrl}
-                title={quickViewTitle}
-                className="flex-1 w-full bg-parchment"
-              />
+                <iframe
+                  src={quickViewUrl}
+                  title={quickViewTitle}
+                  className="flex-1 w-full bg-parchment"
+                />
+              </motion.div>
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </>
   );
 }

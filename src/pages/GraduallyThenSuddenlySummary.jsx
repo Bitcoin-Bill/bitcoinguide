@@ -9,7 +9,7 @@ export default function GraduallyThenSuddenlySummary() {
     <div className="min-h-screen bg-parchment">
       <Navbar />
 
-      <article className="max-w-3xl mx-auto px-6 lg:px-12 pt-28 pb-20">
+      <article className="max-w-3xl mx-auto px-6 lg:px-12 pt-36 pb-20">
         <Link
           to="/#archive"
           className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.2em] uppercase text-lead hover:text-[var(--page-accent)] transition-colors duration-300 mb-10"

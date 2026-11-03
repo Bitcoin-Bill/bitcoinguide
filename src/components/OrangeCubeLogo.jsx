@@ -14,12 +14,14 @@ const MASK_STYLE = {
 
 export default function OrangeCubeLogo({ className = "h-11 w-11 md:h-14 md:w-14" }) {
   return (
-    <Image
-      src={LOGO_SRC}
-      alt="Bitcoin Guide logo"
-      fittingType="fit"
-      className={`${className} rounded-full overflow-hidden`}
-      style={MASK_STYLE}
-    />
+    <span className={`${className} inline-block rounded-full bg-white overflow-hidden`}>
+      <Image
+        src={LOGO_SRC}
+        alt="Bitcoin Guide logo"
+        fittingType="fit"
+        className="w-full h-full rounded-full overflow-hidden"
+        style={MASK_STYLE}
+      />
+    </span>
   );
 }

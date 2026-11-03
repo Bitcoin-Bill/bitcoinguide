@@ -42,7 +42,7 @@ export default function ReadingListLink() {
           className="group flex items-start gap-4 border border-border bg-parchment hover:border-[var(--page-accent)] hover:shadow-sm transition-all duration-300 p-5 w-full text-left"
         >
           <img
-            src="https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ed2dddd1d_BitcoinBillReadingList.png"
+            src="https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8f242b043_820A3C90-DCA2-4290-A63A-3CE51B68512C_Original.png"
             alt="Bitcoin Bill Reading List"
             className="w-14 h-14 object-cover rounded-sm shrink-0 border border-border group-hover:border-[var(--page-accent)] transition-colors duration-300"
           />
@@ -93,7 +93,7 @@ export default function ReadingListLink() {
               <div className="p-8 md:p-10">
                 <div className="flex items-center gap-4 mb-6">
                   <img
-                    src="https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ed2dddd1d_BitcoinBillReadingList.png"
+                    src="https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/8f242b043_820A3C90-DCA2-4290-A63A-3CE51B68512C_Original.png"
                     alt="Bitcoin Bill"
                     className="w-16 h-16 object-cover rounded-sm border border-border shrink-0"
                   />

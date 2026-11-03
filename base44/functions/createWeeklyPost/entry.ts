@@ -3,12 +3,15 @@ import { createClientFromRequest } from 'npm:@base44/sdk@0.8.40';
 export default async function(req) {
   try {
     const base44 = createClientFromRequest(req);
+    const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
 
-    // Resolve this week's Sunday (local-equivalent) as the week_of date.
+    // Resolve the week_of date: explicit override (manual refresh), else this week's Sunday.
     const now = new Date();
-    const sunday = new Date(now);
-    sunday.setDate(now.getDate() - now.getDay());
-    const weekOf = sunday.toISOString().split('T')[0];
+    const weekOf = body.date || (() => {
+      const sunday = new Date(now);
+      sunday.setDate(now.getDate() - now.getDay());
+      return sunday.toISOString().split('T')[0];
+    })();
     const title = `This Week in Bitcoin — week of ${weekOf}`;
 
     // Sunday run: skip if this week's post already exists AND is populated (idempotent).

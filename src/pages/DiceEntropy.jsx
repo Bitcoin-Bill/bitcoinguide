@@ -34,6 +34,7 @@ const steps = [
     sub: [
       <>Change the dropdown (entropy type) from the default to <strong>Dice [1-6]</strong>.</>,
       <>Paste or type your dice roll sequence into the <strong>Entropy</strong> text box (e.g. <code className="font-mono text-xs bg-secondary px-1 py-0.5 rounded">523146261435…</code>).</>,
+      <><span className="text-[var(--page-accent)] font-medium">Recommended:</span> for compatibility with <strong>SeedSigner</strong>, <strong>COLDCARD</strong>, and <strong>EntropyLab</strong>, use the <strong>Base 10 [0-9]</strong> entropy type instead of Dice [1-6] — it SHA-256 hashes your dice digit string the same way those devices do, so the same rolls reproduce the same seed.</>,
     ],
   },
   {
@@ -60,7 +61,7 @@ export default function DiceEntropy() {
     <div className="min-h-screen bg-parchment">
       <Navbar />
 
-      <section className="relative pt-28 pb-2 md:pt-36 md:pb-4">
+      <section className="relative pt-36 pb-2 md:pt-36 md:pb-4">
         <div className="absolute left-6 lg:left-12 top-0 bottom-0 w-px bg-border hidden md:block" />
         <div className="max-w-4xl mx-auto px-6 lg:px-12">
           <div className="flex items-center gap-3 mb-2">

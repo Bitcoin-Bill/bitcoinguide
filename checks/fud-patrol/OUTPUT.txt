@@ -1,0 +1,79 @@
+FUD Patrol — core checks
+core: game
+
+== gameplay ==
+PASS  BUG 1 — an airborne player at y=20 is not hit by a critic standing at y=198
+PASS  BUG 1 control — the same critic still hurts a grounded player
+PASS  BUG 2 — one dart kills exactly one of two overlapping critics
+PASS  BUG 2 control — a second dart kills the second critic
+PASS  BUG 3 — a fatal hit outranks the boss kill in the same tick
+PASS  BUG 3 control — a boss kill with lives left still ends in victory
+PASS  Terminal results are committed once and never re-applied
+
+== lifecycle ==
+PASS  Stage 1 ends at the flag with a stage-clear result
+PASS  nextStage advances 1 → 2 and keeps the score
+PASS  Stage 3 is the boss stage and has no flag
+PASS  nextStage past the last stage resolves victory
+PASS  Defeat then restart resets lives, score and stage
+PASS  Pause clears held input and resume does not replay it
+PASS  Pause/resume is idempotent and does not stack
+PASS  Pool exhaustion drops spawns instead of throwing
+PASS  Particles and texts are capped under heavy bursts
+PASS  Repeated create/start/step/dispose leaves nothing live
+PASS  A long run stays inside its bounds
+
+== frames ==
+PASS  Jump apex is identical at 20, 30, 60 and 120 FPS
+PASS  A four-second run is identical at every render rate
+PASS  Same seed and inputs replay identically
+PASS  Cosmetic randomness cannot change gameplay outcomes
+PASS  The fixed step is bounded — a stalled frame cannot fast-forward the game
+PASS  Step size is exactly one sixtieth of a second
+
+== render ==
+PASS  Every stage draws without throwing
+PASS  The boss, the flag, particles and floating text all render
+PASS  Calm mode draws the same frame with no shake or flash
+PASS  draw() never changes the simulation
+
+== audio ==
+PASS  Nothing is scheduled before a user gesture
+PASS  After unlock, cues schedule sources and music arms one timer
+PASS  Mute gates new cues without tearing down the engine
+PASS  Disposal stops every source, clears the timer, and closes an owned context
+PASS  An injected host context is never closed by the game
+PASS  Two games keep separate engines: disposing one leaves the other running
+PASS  Dispose is idempotent
+
+== regressions ==
+PASS  A 60-second audio clock jump schedules bounded work, not 462 notes
+PASS  The voice bank is built once, at unlock, and never grows per cue
+PASS  Calm survives start, restart and stage change
+PASS  A disposed instance stays inert: no events, no repopulation, no input
+PASS  A session rebuilds a fresh, usable instance after cleanup (Strict Mode)
+PASS  Simulation ticks use no pool callbacks (no per-tick closures)
+PASS  Drawing uses no pool callbacks and caches its gradient
+PASS  Power and boss records are re-armed, not re-created
+
+== input ==
+PASS  The documented keys are implemented — J fires, M mutes, P pauses
+PASS  Keyboard and touch share one action set
+PASS  Two thumbs on two buttons both hold
+PASS  Losing a pointer releases everything it held
+PASS  clearInput drops every source and the jump edge
+PASS  Keyboard events map through to the host, and auto-repeat is ignored
+PASS  Holding Space cancels every scroll default without repeating jump edges
+PASS  Repeated scrolling keys remain available outside the active game
+PASS  Keys are not captured while the host says the game is inactive
+PASS  Typing in a text field never moves the player
+PASS  Blur or a hidden page asks the host to pause
+
+== storage ==
+PASS  A missing store reads as empty and writes as a no-op
+PASS  A throwing store cannot escape
+PASS  Corrupt values fall back instead of producing NaN
+PASS  A working store round-trips numbers
+PASS  A high-score save failure does not interrupt play
+
+59 checks · 59 passed · 0 failed

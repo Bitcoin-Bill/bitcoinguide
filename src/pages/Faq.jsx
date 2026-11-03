@@ -49,7 +49,7 @@ export default function Faq() {
     <div className="min-h-screen bg-parchment">
       <Navbar />
 
-      <section className="relative pt-28 pb-10 md:pt-36 md:pb-12">
+      <section className="relative pt-36 pb-10 md:pt-36 md:pb-12">
         <div className="absolute left-6 lg:left-12 top-0 bottom-0 w-px bg-border hidden md:block" />
         <div className="max-w-3xl mx-auto px-6 lg:px-12">
           <div className="flex items-center gap-3 mb-2">

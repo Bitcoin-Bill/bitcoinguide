@@ -6,6 +6,7 @@ import OrangeCubeLogo from "@/components/OrangeCubeLogo";
 import { useTheme } from "@/components/ThemeProvider";
 import { Image } from "@/components/ui/image";
 import EntropyLabHeaderBubble from "@/components/EntropyLabHeaderBubble";
+import OogaHeaderBubble from "@/components/OogaHeaderBubble";
 import { ENTROPYLAB_DESCRIPTION, ENTROPYLAB_BETA_NOTE } from "@/components/EntropyLabLink";
 
 
@@ -76,7 +77,7 @@ export default function Landing() {
       <button
         onClick={toggleTheme}
         aria-label="Toggle light or dark theme"
-        className="fixed top-5 right-5 z-50 flex items-center justify-center h-9 w-9 rounded-full border border-border bg-parchment/80 backdrop-blur-sm transition-colors duration-300 hover:text-ink"
+        className="fixed top-9 right-5 z-50 flex items-center justify-center h-9 w-9 rounded-full border border-border bg-parchment/80 backdrop-blur-sm transition-colors duration-300 hover:text-ink"
       >
         {theme === "dark" ? <Sun size={16} className="text-yellow-400" /> : <Moon size={16} className="text-teal-500" />}
       </button>
@@ -92,6 +93,7 @@ export default function Landing() {
               <OrangeCubeLogo className="absolute right-full mr-3 h-11 w-11 md:h-14 md:w-14 shrink-0" />
               Bitcoin Guide
               <EntropyLabHeaderBubble className="absolute left-full ml-3 top-1/2 -translate-y-1/2" />
+              <OogaHeaderBubble className="hidden sm:flex absolute left-full ml-[68px] md:ml-20 top-1/2 -translate-y-1/2" />
             </h1>
             <p className="font-heading text-base md:text-lg text-ink/70 italic max-w-lg mx-auto mt-4">
               A starting point for learning Bitcoin — choose a section below to begin.

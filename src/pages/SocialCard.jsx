@@ -13,6 +13,9 @@ import {
   Columns3,
   Type,
   LayoutDashboard,
+  PanelLeft,
+  Twitter,
+  BadgeCheck,
   X,
 } from "lucide-react";
 import html2canvas from "html2canvas";
@@ -30,6 +33,21 @@ const SECTIONS = [
 const BENTO_WIDE = ["literature", "resources", "video-essays"];
 const BENTO_NARROW = ["this-week", "dice", "passphrase", "faq"];
 
+const RESOURCES_GRID = [
+  { label: "Evolution of Money", color: "#F5A623", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/60f1062c4_IMG_0279.png" },
+  { label: "Game Theory", color: "#EC4899", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/033d83c2d_IMG_0287.png" },
+  { label: "Gresham's Law", color: "#C0C0C0", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/67a4dce1e_IMG_0290.png" },
+  { label: "Low-Time Preference", color: "#A3E635", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/40dc1d2c0_IMG_0284.png" },
+  { label: "Innovations", color: "#22D3EE", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/11289adef_IMG_0289.png" },
+  { label: "Value", color: "#F9A8B0", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/f322604a6_IMG_0285.png" },
+  { label: "Liminal State", color: "#2D5A3D", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/2b4223e46_IMG_0286.png" },
+  { label: "Cognitive Dissonance", color: "#7C3AED", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/ed50f6843_IMG_0283.png" },
+  { label: "Monetary Abuse", color: "#F97316", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/7950e2137_IMG_0280.png" },
+  { label: "Human Nature", color: "#A7F3D0", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/9a0cd7386_IMG_0282.png" },
+  { label: "Intuition", color: "#1E40AF", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/fcbef2e7b_IMG_0281.png" },
+  { label: "Conclusion", color: "#6366F1", image: "https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/74fdbfe4d_IMG_0288.png" },
+];
+
 const TAGLINES = [
   "Money grows in value, not volume.",
   "A starting point for learning Bitcoin.",
@@ -41,8 +59,13 @@ const LAYOUTS = [
   { key: "bento", label: "Bento", Icon: LayoutGrid },
   { key: "columns", label: "Columns", Icon: Columns3 },
   { key: "icons", label: "Icons", Icon: LayoutDashboard },
+  { key: "tweet", label: "Tweet", Icon: Twitter },
+  { key: "split", label: "Split", Icon: PanelLeft },
+  { key: "resources", label: "Resources", Icon: Boxes },
   { key: "minimal", label: "Minimal", Icon: Type },
 ];
+
+const SITE_URL = "bitcoin-guide.base44.app";
 
 export default function SocialCard() {
   const [layout, setLayout] = useState("bento");
@@ -53,6 +76,11 @@ export default function SocialCard() {
   const [eyebrowText, setEyebrowText] = useState("A Curated Guide");
   const [showLogo, setShowLogo] = useState(true);
   const [showTagline, setShowTagline] = useState(true);
+  const [featuredKey, setFeaturedKey] = useState("literature");
+  const [tweetUrl, setTweetUrl] = useState(SITE_URL);
+  const [splitBubbleShape, setSplitBubbleShape] = useState("circle");
+  const [splitShowLabels, setSplitShowLabels] = useState(true);
+  const [splitRightMode, setSplitRightMode] = useState("icons");
   const [busy, setBusy] = useState(false);
   const [resultUrl, setResultUrl] = useState(null);
 
@@ -63,11 +91,24 @@ export default function SocialCard() {
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
-    const update = () => setScale(Math.min(1, el.clientWidth / 1200));
+    let frame = null;
+    const update = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = null;
+        setScale((prev) => {
+          const next = Math.min(1, el.clientWidth / 1200);
+          return Math.abs(next - prev) < 0.001 ? prev : next;
+        });
+      });
+    };
     update();
     const ro = new ResizeObserver(update);
     ro.observe(el);
-    return () => ro.disconnect();
+    return () => {
+      if (frame) cancelAnimationFrame(frame);
+      ro.disconnect();
+    };
   }, []);
 
   const toggle = (key) =>
@@ -86,6 +127,7 @@ export default function SocialCard() {
   const accent = (r) => (r.key === "this-week" ? (dark ? "#FFFFFF" : "#1A1C1E") : r.color);
 
   const activeSections = SECTIONS.filter((s) => selected.includes(s.key));
+  const featured = SECTIONS.find((s) => s.key === featuredKey) || SECTIONS[0];
 
   const handleDownload = async () => {
     if (busy || (layout === "columns" && activeSections.length === 0)) return;
@@ -236,6 +278,115 @@ export default function SocialCard() {
             </div>
           )}
 
+          {(layout === "tweet" || layout === "split") && (
+            <>
+              <div>
+                <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-lead mb-3">
+                  Featured Section
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {SECTIONS.map((s) => (
+                    <button
+                      key={s.key}
+                      onClick={() => setFeaturedKey(s.key)}
+                      className={`flex items-center gap-2 px-3 py-2 rounded-md border text-xs font-mono uppercase tracking-wider transition-colors ${
+                        featuredKey === s.key
+                          ? "border-verdigris bg-verdigris/10 text-ink"
+                          : "border-border text-lead hover:border-verdigris/50"
+                      }`}
+                    >
+                      <s.Icon size={14} style={{ color: s.color }} />
+                      {s.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-lead mb-3">
+                  Card URL
+                </p>
+                <input
+                  type="text"
+                  value={tweetUrl}
+                  onChange={(e) => setTweetUrl(e.target.value)}
+                  maxLength={48}
+                  className="w-full bg-background border border-border rounded-md px-3 py-2 text-sm text-foreground focus:outline-none focus:border-verdigris"
+                  placeholder="e.g. bitcoin-guide.base44.app"
+                />
+              </div>
+            </>
+          )}
+
+          {layout === "split" && (
+            <div>
+              <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-lead mb-3">
+                Split Options
+              </p>
+              <div className="flex flex-wrap gap-2 mb-2">
+                <button
+                  type="button"
+                  onClick={() => setSplitBubbleShape("circle")}
+                  className={`px-3 py-1.5 rounded-md border text-xs font-mono uppercase tracking-wider transition-colors ${
+                    splitBubbleShape === "circle"
+                      ? "border-verdigris bg-verdigris/10 text-ink"
+                      : "border-border text-lead hover:border-verdigris/50"
+                  }`}
+                >
+                  Circle Bubbles
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSplitBubbleShape("rounded")}
+                  className={`px-3 py-1.5 rounded-md border text-xs font-mono uppercase tracking-wider transition-colors ${
+                    splitBubbleShape === "rounded"
+                      ? "border-verdigris bg-verdigris/10 text-ink"
+                      : "border-border text-lead hover:border-verdigris/50"
+                  }`}
+                >
+                  Rounded Bubbles
+                </button>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={() => setSplitShowLabels((v) => !v)}
+                  className={`px-3 py-1.5 rounded-md border text-xs font-mono uppercase tracking-wider transition-colors ${
+                    splitShowLabels
+                      ? "border-verdigris bg-verdigris/10 text-ink"
+                      : "border-border text-lead hover:border-verdigris/50"
+                  }`}
+                >
+                  {splitShowLabels ? "✓ Labels" : "Labels"}
+                </button>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-lead self-center mr-1">Right Panel:</span>
+                <button
+                  type="button"
+                  onClick={() => setSplitRightMode("icons")}
+                  className={`px-3 py-1.5 rounded-md border text-xs font-mono uppercase tracking-wider transition-colors ${
+                    splitRightMode === "icons"
+                      ? "border-verdigris bg-verdigris/10 text-ink"
+                      : "border-border text-lead hover:border-verdigris/50"
+                  }`}
+                >
+                  {splitRightMode === "icons" ? "✓ Icons" : "Icons"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSplitRightMode("cubes")}
+                  className={`px-3 py-1.5 rounded-md border text-xs font-mono uppercase tracking-wider transition-colors ${
+                    splitRightMode === "cubes"
+                      ? "border-verdigris bg-verdigris/10 text-ink"
+                      : "border-border text-lead hover:border-verdigris/50"
+                  }`}
+                >
+                  {splitRightMode === "cubes" ? "✓ Cubes" : "Cubes"}
+                </button>
+              </div>
+            </div>
+          )}
+
           <div>
             <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-lead mb-3">
               Tagline
@@ -347,18 +498,18 @@ export default function SocialCard() {
                   style={{
                     width: 1200,
                     height: 630,
-                    background: bg,
+                    background: layout === "tweet" ? "#000000" : bg,
                     position: "relative",
                     display: "flex",
-                    flexDirection: "column",
+                    flexDirection: layout === "split" ? "row" : "column",
                     overflow: "hidden",
                     boxSizing: "border-box",
-                    padding: layout === "bento" ? "48px 56px" : "56px 64px",
+                    padding: layout === "bento" ? "48px 56px" : layout === "tweet" ? "44px 52px" : layout === "split" ? 0 : layout === "resources" ? "40px 56px" : "56px 64px",
                     fontFamily: "Georgia, 'Times New Roman', serif",
                   }}
                 >
                   {/* Header */}
-                  <div style={{ textAlign: "center", marginBottom: layout === "minimal" ? 0 : layout === "bento" ? 36 : 48, marginTop: layout === "minimal" ? "auto" : 0 }}>
+                  <div style={{ textAlign: "center", marginBottom: layout === "minimal" ? 0 : layout === "bento" ? 36 : 48, marginTop: layout === "minimal" ? "auto" : 0, display: layout === "tweet" || layout === "split" || layout === "resources" ? "none" : "block" }}>
                     {eyebrowText && (
                     <div
                       style={{
@@ -389,7 +540,7 @@ export default function SocialCard() {
                           width: layout === "minimal" ? 76 : 56,
                           height: layout === "minimal" ? 76 : 56,
                           borderRadius: "50%",
-                          background: bg,
+                          background: "#FFFFFF",
                           overflow: "hidden",
                           marginRight: 18,
                           position: "relative",
@@ -401,14 +552,10 @@ export default function SocialCard() {
                           alt="Bitcoin Guide"
                           crossOrigin="anonymous"
                           style={{
-                            position: "absolute",
-                            top: "50%",
-                            left: "50%",
-                            width: layout === "minimal" ? 84 : 62,
-                            height: layout === "minimal" ? 84 : 62,
-                            marginTop: layout === "minimal" ? -42 : -31,
-                            marginLeft: layout === "minimal" ? -42 : -31,
+                            width: "100%",
+                            height: "100%",
                             objectFit: "cover",
+                            display: "block",
                           }}
                         />
                       </div>
@@ -562,6 +709,212 @@ export default function SocialCard() {
                   {layout === "minimal" && (
                     <div style={{ marginTop: "auto", marginBottom: "auto", display: "flex", justifyContent: "center" }}>
                       <div style={{ width: 80, height: 2, background: dark ? "#FFFFFF" : "#1A1C1E", opacity: 0.6 }} />
+                    </div>
+                  )}
+
+                  {/* Tweet body */}
+                  {layout === "tweet" && (
+                    <div style={{ display: "flex", flexDirection: "column", flex: 1, fontFamily: "Inter, system-ui, sans-serif", color: "#fff" }}>
+                      {/* Profile row */}
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 22 }}>
+                        <div style={{ display: "flex", gap: 14, alignItems: "center" }}>
+                          <div style={{ width: 64, height: 64, borderRadius: "50%", overflow: "hidden", flexShrink: 0, background: "#FFFFFF" }}>
+                            <img
+                              src="https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/09f1d867a_Untitleddesign3.png"
+                              alt="Bitcoin Guide"
+                              crossOrigin="anonymous"
+                              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                            />
+                          </div>
+                          <div>
+                            <div style={{ display: "flex", alignItems: "center", gap: 5, marginBottom: 2 }}>
+                              <span style={{ fontSize: 20, fontWeight: 700, color: "#fff" }}>Bitcoin Guide</span>
+                              <BadgeCheck size={18} color="#1D9BF0" fill="#1D9BF0" strokeWidth={2} />
+                            </div>
+                            <div style={{ fontSize: 15, color: "#71767B" }}>@bitcoinguideapp</div>
+                          </div>
+                        </div>
+                        <div style={{ fontSize: 17, fontWeight: 700, color: "#fff", letterSpacing: "-0.01em" }}>X.com</div>
+                      </div>
+
+                      {/* Body text */}
+                      <div style={{ marginBottom: 20 }}>
+                        <div style={{ fontSize: 18, color: "#1D9BF0", marginBottom: 6 }}>{tweetUrl}</div>
+                        <div style={{ fontSize: 20, color: "#fff", lineHeight: 1.4, fontWeight: 400 }}>
+                          {featured.sub}. DYOR. Not financial advice.
+                        </div>
+                      </div>
+
+                      {/* Embedded link preview card */}
+                      <div style={{ flex: 1, background: "#161616", borderRadius: 16, border: "1px solid #2f3336", display: "flex", overflow: "hidden", minHeight: 0 }}>
+                        {/* Left: icon + text */}
+                        <div style={{ flex: "0 0 380px", padding: "28px 30px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                          <div style={{ width: 56, height: 56, borderRadius: 12, background: "#0e0e0e", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18, border: `1px solid ${featured.color}33` }}>
+                            <featured.Icon size={30} strokeWidth={1.6} color={featured.color} />
+                          </div>
+                          <div style={{ fontSize: 11, letterSpacing: "0.18em", textTransform: "uppercase", color: featured.color, marginBottom: 10, fontWeight: 600 }}>
+                            Bitcoin Guide · {featured.label}
+                          </div>
+                          <div style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 30, fontWeight: 700, color: "#fff", marginBottom: 10, lineHeight: 1.1 }}>
+                            {featured.label}
+                          </div>
+                          <div style={{ fontSize: 15, color: "#a0a0a0", lineHeight: 1.5 }}>
+                            {featured.sub}
+                          </div>
+                        </div>
+                        {/* Right: mini mock */}
+                        <div style={{ flex: 1, background: "#0b0b0b", padding: "24px", display: "flex", flexDirection: "column", gap: 12, minWidth: 0 }}>
+                          <div style={{ fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: "#71767B" }}>{tweetUrl}</div>
+                          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 10, flex: 1 }}>
+                            {SECTIONS.slice(0, 6).map((s) => (
+                              <div key={s.key} style={{ background: "#161616", borderRadius: 10, padding: "14px 12px", display: "flex", flexDirection: "column", justifyContent: "space-between", position: "relative", overflow: "hidden" }}>
+                                <span style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: s.key === featuredKey ? s.color : `${s.color}55` }} />
+                                <s.Icon size={20} strokeWidth={1.6} color={s.color} style={{ marginBottom: 8 }} />
+                                <div style={{ fontSize: 11, color: "#e0e0e0", fontWeight: 600 }}>{s.label}</div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Footer */}
+                      <div style={{ marginTop: 14, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <span style={{ fontSize: 13, color: "#71767B" }}>{tweetUrl}</span>
+                        <span style={{ fontSize: 13, color: "#71767B" }}>From {tweetUrl}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Split body */}
+                  {layout === "split" && (
+                    <>
+                      {/* Left brand panel */}
+                      <div style={{ width: "48%", background: dark ? "#0e0e10" : "#1A1C1E", padding: "56px 52px", display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }}>
+                        <span style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: `linear-gradient(90deg, ${featured.color}, transparent)` }} />
+                        {showLogo && (
+                          <div style={{ width: 88, height: 88, borderRadius: "50%", overflow: "hidden", marginBottom: 28, position: "relative", background: "#FFFFFF" }}>
+                            <img
+                              src="https://media.base44.com/images/public/6a4d10bcc776843a6d26b955/09f1d867a_Untitleddesign3.png"
+                              alt="Bitcoin Guide"
+                              crossOrigin="anonymous"
+                              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                            />
+                          </div>
+                        )}
+                        {eyebrowText && (
+                          <div style={{ fontFamily: "Inter, system-ui, sans-serif", fontSize: 13, letterSpacing: "0.3em", textTransform: "uppercase", color: featured.color, marginBottom: 14, fontWeight: 600 }}>
+                            {eyebrowText}
+                          </div>
+                        )}
+                        <div style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 56, fontWeight: 300, color: "#FFFFFF", letterSpacing: "-0.01em", lineHeight: 1, marginBottom: 18 }}>
+                          {title}
+                        </div>
+                        {showTagline && (
+                          <div style={{ fontSize: 20, fontStyle: "italic", color: "#A0A0A0", fontWeight: 400, lineHeight: 1.4, maxWidth: 360 }}>
+                            {tagline}
+                          </div>
+                        )}
+                        <div style={{ position: "absolute", bottom: 44, left: 52, fontFamily: "Inter, system-ui, sans-serif", fontSize: 13, color: "#71767B", letterSpacing: "0.05em" }}>
+                          {tweetUrl}
+                        </div>
+                      </div>
+
+                      {/* Right content panel */}
+                      <div style={{ flex: 1, background: cardBg, padding: splitRightMode === "cubes" ? "44px 40px" : "52px 48px", display: "flex", flexDirection: "column" }}>
+                        {splitRightMode === "cubes" ? (
+                          <>
+                            <div style={{ fontFamily: "Inter, system-ui, sans-serif", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: eyebrow, marginBottom: 14, fontWeight: 600 }}>
+                              Resources
+                            </div>
+                            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(4, 1fr)", gap: 12, flex: 1 }}>
+                              {RESOURCES_GRID.map((r, i) => (
+                                <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 6, position: "relative" }}>
+                                  {i === 0 && (
+                                    <div style={{ position: "absolute", top: "50%", left: "50%", width: 110, height: 110, marginTop: -55, marginLeft: -55, borderRadius: "50%", background: `radial-gradient(circle, ${r.color}66, transparent 70%)`, filter: "blur(8px)", zIndex: 0 }} />
+                                  )}
+                                  <div style={{ width: 56, height: 56, borderRadius: 12, overflow: "hidden", position: "relative", zIndex: 1, boxShadow: "0 3px 10px rgba(0,0,0,0.3)" }}>
+                                    <img src={r.image} alt={r.label} crossOrigin="anonymous" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                                  </div>
+                                  <div style={{ fontSize: 11, fontWeight: 600, color: dark ? "#ffffff" : "#1A1C1E", textAlign: "center", position: "relative", zIndex: 1, lineHeight: 1.15, maxWidth: 92 }}>
+                                    {r.label}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div style={{ fontFamily: "Inter, system-ui, sans-serif", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: eyebrow, marginBottom: 18, fontWeight: 600 }}>
+                              Featured
+                            </div>
+                            <div style={{ display: "flex", alignItems: "center", gap: 18, marginBottom: 22 }}>
+                              <div style={{ width: 64, height: 64, borderRadius: 14, background: dark ? "#0e0e0e" : "#F2EEE6", display: "flex", alignItems: "center", justifyContent: "center", border: `1px solid ${featured.color}33`, flexShrink: 0 }}>
+                                <featured.Icon size={34} strokeWidth={1.6} color={featured.color} />
+                              </div>
+                              <div>
+                                <div style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 34, fontWeight: 700, color: titleColor, lineHeight: 1.1, marginBottom: 4 }}>
+                                  {featured.label}
+                                </div>
+                                <div style={{ fontSize: 15, color: subColor, lineHeight: 1.4 }}>
+                                  {featured.sub}
+                                </div>
+                              </div>
+                            </div>
+                            <div style={{ height: 1, background: dark ? "#2a2a2c" : "#E6E0D4", marginBottom: 22 }} />
+                            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 18, alignContent: "center", flex: 1 }}>
+                              {SECTIONS.filter((s) => s.key !== featuredKey).slice(0, 6).map((s) => (
+                                <div key={s.key} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, width: 92 }}>
+                                  <div style={{ width: 64, height: 64, borderRadius: splitBubbleShape === "circle" ? "50%" : 18, background: dark ? "#161618" : "#F8F4EC", display: "flex", alignItems: "center", justifyContent: "center", border: `1px solid ${s.color}33`, position: "relative", overflow: "hidden" }}>
+                                    <span style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: s.color }} />
+                                    <s.Icon size={28} strokeWidth={1.6} color={s.color} />
+                                  </div>
+                                  {splitShowLabels && (
+                                    <div style={{ fontSize: 12, fontWeight: 600, color: labelColor, fontFamily: "Inter, system-ui, sans-serif", textAlign: "center", lineHeight: 1.2 }}>
+                                      {s.label}
+                                    </div>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          </>
+                        )}
+                      </div>
+                    </>
+                  )}
+
+                  {/* Resources body */}
+                  {layout === "resources" && (
+                    <div style={{ display: "flex", flexDirection: "column", flex: 1, fontFamily: "Inter, system-ui, sans-serif", background: dark ? "#16181a" : "#F2EEE6", margin: "-40px -56px", padding: "40px 56px" }}>
+                      <div style={{ textAlign: "center", marginBottom: 24 }}>
+                        {eyebrowText && (
+                          <div style={{ fontSize: 12, letterSpacing: "0.3em", textTransform: "uppercase", color: eyebrow, marginBottom: 8, fontWeight: 600 }}>
+                            {eyebrowText}
+                          </div>
+                        )}
+                        <div style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 42, fontWeight: 300, color: titleColor, letterSpacing: "-0.01em", lineHeight: 1 }}>
+                          Resources
+                        </div>
+                        {showTagline && (
+                          <div style={{ fontSize: 16, fontStyle: "italic", color: subColor, marginTop: 8 }}>
+                            {tagline}
+                          </div>
+                        )}
+                      </div>
+                      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(4, 1fr)", gap: 14, flex: 1 }}>
+                        {RESOURCES_GRID.map((r, i) => (
+                          <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 8, position: "relative" }}>
+                            {i === 0 && (
+                              <div style={{ position: "absolute", top: "50%", left: "50%", width: 150, height: 150, marginTop: -75, marginLeft: -75, borderRadius: "50%", background: `radial-gradient(circle, ${r.color}66, transparent 70%)`, filter: "blur(10px)", zIndex: 0 }} />
+                            )}
+                            <div style={{ width: 72, height: 72, borderRadius: 14, overflow: "hidden", position: "relative", zIndex: 1, boxShadow: "0 4px 12px rgba(0,0,0,0.3)" }}>
+                              <img src={r.image} alt={r.label} crossOrigin="anonymous" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                            </div>
+                            <div style={{ fontSize: 14, fontWeight: 600, color: dark ? "#ffffff" : "#1A1C1E", textAlign: "center", position: "relative", zIndex: 1, lineHeight: 1.2 }}>
+                              {r.label}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>

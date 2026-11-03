@@ -22,6 +22,7 @@ import SocialCard from '@/pages/SocialCard';
 import DiceEntropy from '@/pages/DiceEntropy';
 import Passphrase from '@/pages/Passphrase';
 import VideoEssays from '@/pages/VideoEssays';
+import OogaBoogaLand from '@/pages/OogaBoogaLand';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -64,6 +65,7 @@ const AuthenticatedApp = () => {
       <Route path="/dice-entropy" element={<DiceEntropy />} />
       <Route path="/passphrase" element={<Passphrase />} />
       <Route path="/video-essays" element={<VideoEssays />} />
+      <Route path="/oogabooga-land" element={<OogaBoogaLand />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

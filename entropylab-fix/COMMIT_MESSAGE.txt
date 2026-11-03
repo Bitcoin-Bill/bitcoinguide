@@ -1,0 +1,18 @@
+fix(cards): dedupe pad taps so the suit never stays selected
+
+Tapping a rank then a suit in the Cards input mode intermittently left the
+suit button in its .active (orange) state with no card committed, forcing a
+second tap. A single physical tap was dispatching two events (touchend/
+pointerup plus the synthesized click), so the commit handler ran twice: the
+first run committed the card and cleared the selection, the second re-toggled
+the suit's .active and no-op'd the commit (no rank re-selected), leaving the
+pad half-selected.
+
+- Handle the pad through click only; call preventDefault() on touchend/
+  pointerup so the browser does not synthesize a second click.
+- Make the .active clear + advance synchronous on commit so the pad never
+  rests in a half-selected state, even if a stray second event arrives.
+- Add a per-pad commit guard so a double-dispatched click is ignored.
+
+Repro: Cards mode, tap A then heart. Before: ~1 in N taps left the suit bold
+and dropped the card. After: every tap commits exactly one card and resets.

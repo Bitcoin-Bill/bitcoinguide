@@ -41,7 +41,7 @@ export default function ThisWeekInBitcoin() {
     >
       <Navbar />
 
-      <section className="relative pt-28 pb-8 md:pt-36 md:pb-10">
+      <section className="relative pt-36 pb-8 md:pt-36 md:pb-10">
         {!isPaper && (
           <div className="absolute left-6 lg:left-12 top-0 bottom-0 w-px bg-border hidden md:block" />
         )}

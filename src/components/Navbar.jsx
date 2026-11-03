@@ -18,6 +18,7 @@ import {
   KeyRound,
   Clapperboard,
 } from "lucide-react";
+import OogaPalmTreeIcon from "@/components/OogaPalmTreeIcon";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -29,6 +30,7 @@ import {
 import BtcTicker from "@/components/BtcTicker";
 import OrangeCubeLogo from "@/components/OrangeCubeLogo";
 import SearchBar from "@/components/SearchBar";
+import BeerTip from "@/components/BeerTip";
 import { useTheme } from "@/components/ThemeProvider";
 import { Image } from "@/components/ui/image";
 import { ENTROPYLAB_URL, ENTROPYLAB_THUMB_LIGHT, ENTROPYLAB_THUMB_DARK } from "@/components/EntropyLabLink";
@@ -40,7 +42,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const pageOrder = ["/", "/literature", "/resources", "/this-week", "/dice-entropy", "/passphrase", "/video-essays", "/faq"];
+  const pageOrder = ["/", "/literature", "/resources", "/this-week", "/dice-entropy", "/passphrase", "/video-essays", "/faq", "/oogabooga-land"];
   const goRelative = (dir) => {
     const idx = pageOrder.indexOf(location.pathname);
     const next = idx === -1 ? 0 : (idx + dir + pageOrder.length) % pageOrder.length;
@@ -55,7 +57,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-parchment/95 backdrop-blur-sm border-b border-border"
           : "bg-transparent"
@@ -170,6 +172,16 @@ export default function Navbar() {
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
+                <Link
+                  to="/oogabooga-land"
+                  className="flex items-center gap-2.5 font-mono text-xs tracking-[0.15em] uppercase text-lead hover:text-ink"
+                >
+                  <OogaPalmTreeIcon className="w-[15px] h-[15px] shrink-0" />
+                  Ooga Booga Land
+                  <span className="font-mono text-[9px] tracking-[0.15em] uppercase text-lead/50 ml-auto">(make a caveman)</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
                 <a
                   href={ENTROPYLAB_URL}
                   target="_blank"
@@ -195,6 +207,7 @@ export default function Navbar() {
           >
             {menuOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
+          <BeerTip />
           <button
             onClick={toggleTheme}
             aria-label="Toggle light or dark theme"
@@ -292,6 +305,15 @@ export default function Navbar() {
               <Sparkles size={15} className="text-[#EC4899]" />
               AI FAQ
             </Link>
+            <Link
+              to="/oogabooga-land"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2.5 py-2.5 font-mono text-xs tracking-[0.2em] uppercase text-lead hover:text-ink transition-colors duration-300"
+            >
+              <OogaPalmTreeIcon className="w-[15px] h-[15px] shrink-0" />
+              Ooga Booga Land
+              <span className="font-mono text-[9px] tracking-[0.15em] uppercase text-lead/50">(make a caveman)</span>
+            </Link>
             <a
               href={ENTROPYLAB_URL}
               target="_blank"
@@ -311,7 +333,7 @@ export default function Navbar() {
         </div>
       )}
 
-      <div className="md:hidden fixed top-16 left-0 right-0 z-30 h-9 flex items-center justify-center bg-parchment/95 backdrop-blur-sm border-b border-border">
+      <div className="md:hidden fixed left-0 right-0 top-16 z-30 h-9 flex items-center justify-center bg-parchment/95 backdrop-blur-sm border-b border-border">
         <BtcTicker />
       </div>
     </nav>

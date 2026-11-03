@@ -152,6 +152,83 @@ html {
   .jar-jiggle { animation: none; }
 }
 
+/* Tip icon vibrate */
+@keyframes tip-vibrate {
+  0%, 72%, 100% { transform: rotate(0deg); }
+  74% { transform: rotate(-12deg); }
+  76% { transform: rotate(12deg); }
+  78% { transform: rotate(-9deg); }
+  80% { transform: rotate(9deg); }
+  82% { transform: rotate(-5deg); }
+  84% { transform: rotate(0deg); }
+}
+.tip-vibrate {
+  animation: tip-vibrate 3.2s ease-in-out infinite;
+  transform-origin: 50% 80%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tip-vibrate { animation: none; }
+}
+
+/* Ooga caveman — idle bob, with an occasional club swing */
+@keyframes ooga-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.5px); }
+}
+.ooga-bob {
+  animation: ooga-bob 2.8s ease-in-out infinite;
+  transform-box: view-box;
+}
+
+@keyframes ooga-swing {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  70% { transform: rotate(-34deg); }
+  78% { transform: rotate(9deg); }
+  86% { transform: rotate(-4deg); }
+  94% { transform: rotate(0deg); }
+}
+.ooga-swing {
+  animation: ooga-swing 4.6s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 15.7px 12.2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ooga-bob, .ooga-swing { animation: none; }
+}
+
+/* Ooga palm tree — gentle sway from the trunk base */
+@keyframes palm-sway {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+}
+.palm-sway {
+  animation: palm-sway 4.2s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 15px 27px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .palm-sway { animation: none; }
+}
+
+/* Bitclank Bill — soft pulse on his laser-eye glow */
+@keyframes bill-eye-glow {
+  0%, 100% { opacity: 0.18; }
+  50% { opacity: 0.42; }
+}
+.bill-eye-glow {
+  opacity: 0.18;
+  animation: bill-eye-glow 2.6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bill-eye-glow { animation: none; opacity: 0.28; }
+}
+
+/* QR zoom-crop to remove black border */
+.qr-zoom img {
+  transform: scale(1.15);
+  transform-origin: center;
+}
+
 /* Newspaper mode — This Week in Bitcoin */
 .np-serif { font-family: Georgia, 'Times New Roman', 'STIX Two Text', serif; }
 .np-dropcap::first-letter {
